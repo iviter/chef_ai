@@ -27,12 +27,9 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
-# gem "rack-cors"
-
 group :development, :test do
   gem "rspec-rails", "~> 7.1"
-  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+  gem "pry-rails", "~> 0.3.11"
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
