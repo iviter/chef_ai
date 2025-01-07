@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :recipes
+      resources :recipes do
+        collection do
+          post :search
+        end
+      end
     end
   end
-
-  get "up" => "rails/health#show", as: :rails_health_check
 end
