@@ -1,17 +1,23 @@
-module Decorators
-  class GroqAiResponseDecorator
-    DEFAULT_MESSAGE = 'Something went wrong. Please try again!'.freeze
+class GroqAiResponseDecorator
+  DEFAULT_MESSAGE = 'Something went wrong. Please try again!'.freeze
 
-    def initialize(response)
-      @response = response
-    end
+  def initialize(response)
+    @response = response
+  end
 
-    def message
-      response.dig('choices', 0, 'message', 'content') || DEFAULT_MESSAGE
-    end
+  def message
+    response_message || DEFAULT_MESSAGE
+  end
 
-    private
+  def to_lowercase
+    response_message.downcase
+  end
 
-    attr_reader :response
+  private
+
+  attr_reader :response
+
+  def response_message
+    response.dig('choices', 0, 'message', 'content')
   end
 end
