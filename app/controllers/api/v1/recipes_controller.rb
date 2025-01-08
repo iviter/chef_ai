@@ -6,19 +6,14 @@ class Api::V1::RecipesController < ApplicationController
   end
 
   def create
-    @recipe = Recipe.new(recipe_params)
+    recipe = ::RecipeGeneratorService.new(recipe_params.to_h).call
 
-    if @recipe.save
-      render json: @recipe, status: :created, location: @recipe
+    if ::RecipeValidator.new(recipe.message).valid_recipe?
+      render json: [ recipe.message ], status: :ok
     else
-      render json: @recipe.errors, status: :unprocessable_entity
+      render json: { error: 'Failed to generate a valid recipe. Please select appropriate ingredients and try again.' },
+                     status: :unprocessable_entity
     end
-  end
-
-  def search
-    response = GroqAiClientResponse.new(recipe_params.to_h).call
-
-    render json: [ response.message ]
   end
 
   private

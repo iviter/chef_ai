@@ -1,11 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :recipes do
-        collection do
-          post :search
-        end
-      end
+      resources :recipes, only: %i[index create]
     end
   end
 end
