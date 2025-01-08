@@ -1,52 +1,26 @@
 class Api::V1::RecipesController < ApplicationController
-  before_action :set_recipe, only: %i[ show update destroy ]
-
-  # GET /recipes
   def index
     @recipes = Recipe.all
 
     render json: @recipes
   end
 
-  # GET /recipes/1
-  def show
-    render json: @recipe
-  end
-
-  # POST /recipes
   def create
-    @recipe = Recipe.new(recipe_params)
+    recipe = ::RecipeGeneratorService.new(recipe_params.to_h).call
 
-    if @recipe.save
-      render json: @recipe, status: :created, location: @recipe
+    if ::RecipeValidator.new(recipe.message).valid_recipe?
+      render json: [ recipe.message ], status: :ok
     else
-      render json: @recipe.errors, status: :unprocessable_entity
+      render json: { error: 'Failed to generate a valid recipe. Please select appropriate ingredients and try again.' },
+                     status: :unprocessable_entity
     end
-  end
-
-  # PATCH/PUT /recipes/1
-  def update
-    if @recipe.update(recipe_params)
-      render json: @recipe
-    else
-      render json: @recipe.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /recipes/1
-  def destroy
-    @recipe.destroy!
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
 
-  def set_recipe
-    @recipe = Recipe.find(params[:id])
-  end
-
-  # Only allow a list of trusted parameters through.
   def recipe_params
-    params.require(:recipe).permit(:name, :description)
+    params.require(:recipe).permit(:description, :name, :dishType, :cuisine, :mainIngredients, :dietaryRestrictions,
+                                   :allergies, :servings, :cookingTime, :cookingMethod, :flavorProfile,
+                                   :specialOccasion)
   end
 end
