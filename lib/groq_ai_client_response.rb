@@ -1,27 +1,18 @@
 class GroqAiClientResponse
   BASE_URL = 'https://api.groq.com/openai/v1/chat/completions'.freeze
-  DEFAULT_MESSAGE = { 'message' => 'Please provide step-by-step recipe for a dish based on the provided ingredients' }
 
   def initialize(input, model = 'llama-3.3-70b-versatile')
-    @input = filter(input)
+    @input = input
     @model = model
   end
 
   def call
-    Decorators::GroqAiResponseDecorator.new(response)
+    ::GroqAiResponseDecorator.new(response)
   end
 
   private
 
   attr_reader :input, :model, :http_response
-
-  def filter(input)
-    input
-      .reject { |_, v| v.blank? }
-      .merge(DEFAULT_MESSAGE)
-      .map { |k, v| "#{k}: #{v}" }
-      .join(', ')
-  end
 
   def response
     Retryable.retryable(tries: 5) do
