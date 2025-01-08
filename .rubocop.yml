@@ -16,3 +16,6 @@ Style/StringLiterals:
 Bundler/OrderedGems:
   Exclude:
     - Gemfile
+Layout/LineLength:
+  Max: 120
+
