@@ -11,6 +11,7 @@ const RecipeForm = ({ generateRecipe }) => {
   const [cookingMethod, setCookingMethod] = useState('');
   const [flavorProfile, setFlavorProfile] = useState('');
   const [specialOccasion, setSpecialOccasion] = useState('');
+  const [errors, setErrors] = useState({});
 
   const recipeData = {
     dishType,
@@ -25,16 +26,35 @@ const RecipeForm = ({ generateRecipe }) => {
     specialOccasion,
   };
 
+
+  const isValidRequiredFields = () => {
+    const newErrors = {};
+
+    if (!dishType) newErrors.dishType = "Dish type is required";
+    if (!cuisine) newErrors.cuisine = "Cuisine is required";
+    if (!mainIngredients) newErrors.mainIngredients = "Main ingredients are required";
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    generateRecipe(recipeData);
+    if (isValidRequiredFields()) {
+      generateRecipe(recipeData);
+    }
   };
 
   return (
     <div className="bg-gray-50 p-4 rounded-lg shadow-md w-full">
       <form onSubmit={handleSubmit} className="space-y-4">
+        {Object.keys(errors).length > 0 && (
+          <div className="text-red-600 mb-4">
+            Please fill in all required fields
+          </div>
+        )}
         <div>
-          <label htmlFor="dishType" className="block text-sm font-medium text-gray-700">Dish Type:</label>
+          <label htmlFor="dishType" className="block text-sm font-medium text-gray-700">*Dish Type:</label>
           <select
             id="dishType"
             value={dishType}
@@ -50,7 +70,7 @@ const RecipeForm = ({ generateRecipe }) => {
         </div>
 
         <div>
-          <label htmlFor="cuisine" className="block text-sm font-medium text-gray-700">Cuisine:</label>
+          <label htmlFor="cuisine" className="block text-sm font-medium text-gray-700">*Cuisine:</label>
           <select
             id="cuisine"
             value={cuisine}
@@ -67,7 +87,7 @@ const RecipeForm = ({ generateRecipe }) => {
         </div>
 
         <div>
-          <label htmlFor="mainIngredients" className="block text-sm font-medium text-gray-700">Main Ingredients:</label>
+          <label htmlFor="mainIngredients" className="block text-sm font-medium text-gray-700">*Main Ingredients:</label>
           <input
             type="text"
             id="mainIngredients"
