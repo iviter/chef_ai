@@ -26,8 +26,11 @@ group :development, :test do
   gem 'dotenv-rails', '~> 3.1', '>= 3.1.7'
   gem 'rspec-rails', '~> 7.1'
   gem 'pry-rails', '~> 0.3.11'
-
-  # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem 'brakeman', require: false
   gem 'rubocop-rails-omakase', require: false
+end
+
+group :test do
+  gem 'webmock', '~> 3.24'
+  gem 'vcr', '~> 6.3', '>= 6.3.1'
 end
