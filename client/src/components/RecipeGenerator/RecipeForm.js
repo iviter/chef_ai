@@ -147,6 +147,7 @@ const RecipeForm = ({ generateRecipe }) => {
           >
             <option value="">Select</option>
             <option value="slow">Slow</option>
+            <option value="medium">Medium</option>
             <option value="fast">Fast</option>
           </select>
         </div>
