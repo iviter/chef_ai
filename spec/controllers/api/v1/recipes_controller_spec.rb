@@ -1,5 +1,4 @@
 require 'rails_helper'
-require 'ostruct'
 
 RSpec.describe Api::V1::RecipesController, type: :controller do
   describe 'POST #search' do
@@ -57,7 +56,7 @@ RSpec.describe Api::V1::RecipesController, type: :controller do
           recipe_request
 
           expect(response).to have_http_status(:ok)
-          expect(response.body).to include('Classic Italian Tomato and Basil Pasta Recipe')
+          expect(response.body).to include('Tomato, Cheese, and Basil Pasta Recipe')
         end
       end
     end
