@@ -4,7 +4,7 @@ class RecipeValidator
   end
 
   def valid_recipe?
-    response = GroqAiClientResponse.new(prompt).call
+    response = GroqAiClientResponse.new(default_prompt).call
     response.to_lowercase == 'true'
   end
 
@@ -12,8 +12,8 @@ class RecipeValidator
 
   attr_reader :recipe
 
-  def prompt
-    "Please validate the following text and confirm whether it is a valid step-by-step recipe: #{recipe}
-    Respond with true if it is a valid recipe, or false otherwise"
+  def default_prompt
+    "Please validate the following text and confirm whether it is a valid step-by-step recipe: #{recipe}. Respond " \
+    'with true if it is a valid recipe, or false otherwise'
   end
 end

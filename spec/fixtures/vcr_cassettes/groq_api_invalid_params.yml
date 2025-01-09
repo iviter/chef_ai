@@ -1,0 +1,211 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"messages":[{"role":"user","content":"dishType: adnrgw, cuisine: adsad,
+        mainIngredients: erwfded, message: Please provide step-by-step recipe for
+        a dish based on the provided ingredients"}],"model":"llama-3.3-70b-versatile"}'
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jan 2025 19:25:25 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8ff6d01c19205e1c-MAD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '1000'
+      X-Ratelimit-Limit-Tokens:
+      - '6000'
+      X-Ratelimit-Remaining-Requests:
+      - '996'
+      X-Ratelimit-Remaining-Tokens:
+      - '5958'
+      X-Ratelimit-Reset-Requests:
+      - 5m3.888999999s
+      X-Ratelimit-Reset-Tokens:
+      - 420ms
+      X-Request-Id:
+      - req_01jh68ekfxe92r4k61z5r9rpjx
+      Set-Cookie:
+      - __cf_bm=0ZRY4tCwLroWjmYfXGLtCpwgrNaK9XP302qWtwzbzmE-1736450725-1.0.1.1-lruVYOrgSzaCbWAZIaT_fwUbAJTLkmqAWqEEkGBRlwjKb0Uo8Mwuwxl2G.6SKdf_NblJ4tSWHxoCAKZ80wH.jg;
+        path=/; expires=Thu, 09-Jan-25 19:55:25 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-17ea62b3-e9e9-4490-b127-9dc5afde329b","object":"chat.completion","created":1736450723,"model":"llama-3.3-70b-versatile","choices":[{"index":0,"message":{"role":"assistant","content":"I
+        see that the provided information seems to be jumbled and doesn''t make sense
+        in terms of a specific dish type, cuisine, or main ingredients. However, I
+        can still try to come up with a step-by-step recipe based on my understanding
+        of a generic dish.\n\nAssuming the dish type is \"adnrgw\" which could be
+        a mix of different letters and doesn''t directly relate to a specific dish,
+        let''s create a simple recipe. If the cuisine is \"adsad\" which seems like
+        a non-specific term, I''ll assume it''s a fusion cuisine with elements from
+        various cultures. Lastly, the main ingredients \"erwfded\" don''t directly
+        match any common ingredients, so I''ll select some generic items that are
+        versatile and can be used in many dishes.\n\nGiven the unclear information,
+        let''s create a simple and versatile recipe using common ingredients:\n\n###
+        Generic Fusion Dish Recipe\n\n#### Ingredients:\n1. 1 cup of mixed vegetables
+        (bell peppers, carrots, onions)\n2. 1 cup of cooked chicken or tofu (for protein)\n3.
+        2 tablespoons of olive oil\n4. 1 teaspoon of soy sauce\n5. 1 teaspoon of curry
+        powder\n6. Salt and pepper to taste\n7. 1 tablespoon of fresh cilantro (for
+        garnish)\n\n#### Instructions:\n1. **Prepare the ingredients:** Chop the mixed
+        vegetables into bite-sized pieces. If using chicken, ensure it''s cooked and
+        diced. If using tofu, cut it into small cubes.\n2. **Heat the oil:** In a
+        large pan, heat the olive oil over medium heat.\n3. **Add the vegetables:**
+        Put the chopped vegetables into the pan and stir-fry until they''re slightly
+        tender. This should take about 5 minutes.\n4. **Add the protein and spices:**
+        Add the cooked chicken or tofu to the pan, along with the soy sauce and curry
+        powder. Stir well to combine.\n5. **Season to taste:** Add salt and pepper
+        to taste. Continue to stir-fry for another 2-3 minutes, ensuring the flavors
+        are well combined.\n6. **Garnish and serve:** Transfer the dish to a serving
+        plate, garnish with fresh cilantro, and serve hot.\n\nThis recipe is a basic,
+        adaptable dish that can be altered based on the actual ingredients and preferences
+        you have. Feel free to substitute the vegetables, protein, and spices with
+        your favorites or what you have available. Enjoy!"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.018681838,"prompt_tokens":71,"prompt_time":0.012108689,"completion_tokens":495,"completion_time":1.8,"total_tokens":566,"total_time":1.812108689},"system_fingerprint":"fp_fcc3b74982","x_groq":{"id":"req_01jh68ekfxe92r4k61z5r9rpjx"}}
+
+        '
+  recorded_at: Thu, 09 Jan 2025 19:25:25 GMT
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"messages":[{"role":"user","content":"Please validate the following
+        text and confirm whether it is a valid step-by-step recipe: I see that the
+        provided information seems to be jumbled and doesn''t make sense in terms
+        of a specific dish type, cuisine, or main ingredients. However, I can still
+        try to come up with a step-by-step recipe based on my understanding of a generic
+        dish.\n\nAssuming the dish type is \"adnrgw\" which could be a mix of different
+        letters and doesn''t directly relate to a specific dish, let''s create a simple
+        recipe. If the cuisine is \"adsad\" which seems like a non-specific term,
+        I''ll assume it''s a fusion cuisine with elements from various cultures. Lastly,
+        the main ingredients \"erwfded\" don''t directly match any common ingredients,
+        so I''ll select some generic items that are versatile and can be used in many
+        dishes.\n\nGiven the unclear information, let''s create a simple and versatile
+        recipe using common ingredients:\n\n### Generic Fusion Dish Recipe\n\n####
+        Ingredients:\n1. 1 cup of mixed vegetables (bell peppers, carrots, onions)\n2.
+        1 cup of cooked chicken or tofu (for protein)\n3. 2 tablespoons of olive oil\n4.
+        1 teaspoon of soy sauce\n5. 1 teaspoon of curry powder\n6. Salt and pepper
+        to taste\n7. 1 tablespoon of fresh cilantro (for garnish)\n\n#### Instructions:\n1.
+        **Prepare the ingredients:** Chop the mixed vegetables into bite-sized pieces.
+        If using chicken, ensure it''s cooked and diced. If using tofu, cut it into
+        small cubes.\n2. **Heat the oil:** In a large pan, heat the olive oil over
+        medium heat.\n3. **Add the vegetables:** Put the chopped vegetables into the
+        pan and stir-fry until they''re slightly tender. This should take about 5
+        minutes.\n4. **Add the protein and spices:** Add the cooked chicken or tofu
+        to the pan, along with the soy sauce and curry powder. Stir well to combine.\n5.
+        **Season to taste:** Add salt and pepper to taste. Continue to stir-fry for
+        another 2-3 minutes, ensuring the flavors are well combined.\n6. **Garnish
+        and serve:** Transfer the dish to a serving plate, garnish with fresh cilantro,
+        and serve hot.\n\nThis recipe is a basic, adaptable dish that can be altered
+        based on the actual ingredients and preferences you have. Feel free to substitute
+        the vegetables, protein, and spices with your favorites or what you have available.
+        Enjoy!. Respond with true if it is a valid recipe, or false otherwise"}],"model":"llama-3.3-70b-versatile"}'
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jan 2025 19:25:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8ff6d029e83a60d1-MAD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '1000'
+      X-Ratelimit-Limit-Tokens:
+      - '6000'
+      X-Ratelimit-Remaining-Requests:
+      - '995'
+      X-Ratelimit-Remaining-Tokens:
+      - '4891'
+      X-Ratelimit-Reset-Requests:
+      - 7m9.746999999s
+      X-Ratelimit-Reset-Tokens:
+      - 11.083999999s
+      X-Request-Id:
+      - req_01jh68enp2e9zv98k6w3a8488t
+      Set-Cookie:
+      - __cf_bm=bKSNA2uw1n5LzimSUKY1HVqIyiqY_XmCIfq4zq2Juok-1736450726-1.0.1.1-Wgxf4n3xYFAJjxtcJN3f_ijJ8.aBjwocGG4Q38OE2AbTS2kQbzmPeu4.5GsnA815WJfWYO4DQsXLXc3H8YDI1Q;
+        path=/; expires=Thu, 09-Jan-25 19:55:26 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-568a90de-bf8d-435c-9bb7-e0dcf929cb5a","object":"chat.completion","created":1736450725,"model":"llama-3.3-70b-versatile","choices":[{"index":0,"message":{"role":"assistant","content":"True.
+        \n\nThe provided recipe, despite being created based on unclear and jumbled
+        information, is a valid step-by-step recipe. It includes a list of ingredients
+        and a series of instructions that can be followed to prepare a dish. The instructions
+        are clear and logical, starting with preparing the ingredients, then cooking
+        the vegetables and protein, and finally seasoning and serving the dish. The
+        recipe also allows for adaptability and substitution of ingredients, making
+        it versatile and usable."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.01848784099999999,"prompt_tokens":559,"prompt_time":0.073418833,"completion_tokens":93,"completion_time":0.338181818,"total_tokens":652,"total_time":0.411600651},"system_fingerprint":"fp_4e32347616","x_groq":{"id":"req_01jh68enp2e9zv98k6w3a8488t"}}
+
+        '
+  recorded_at: Thu, 09 Jan 2025 19:25:26 GMT
+recorded_with: VCR 6.3.1
