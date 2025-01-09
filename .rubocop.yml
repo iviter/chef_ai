@@ -11,8 +11,6 @@ Documentation:
 AllCops:
   SuggestExtensions: false
 Style/StringLiterals:
-  EnforcedStyle: single_quotes
-RSpec/Style/StringLiterals:
   Enabled: true
   EnforcedStyle: single_quotes 
 Bundler/OrderedGems:
