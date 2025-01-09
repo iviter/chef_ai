@@ -15,7 +15,7 @@ class GroqAiClientResponse
   attr_reader :input, :model, :http_response
 
   def response
-    Retryable.retryable(tries: 5) do
+    Retryable.retryable(tries: 3) do
       @http_response ||= HTTParty.post(BASE_URL, headers: headers, body: body.to_json)
 
       if http_response.success?

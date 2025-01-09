@@ -10,7 +10,7 @@ class GroqAiResponseDecorator
   end
 
   def to_lowercase
-    response_message.downcase
+    response_message&.downcase
   end
 
   private
