@@ -14,7 +14,7 @@ RSpec.describe GroqAiClientResponse do
           result = client_response.call
 
           expect(result).to be_a(GroqAiResponseDecorator)
-          expect(result.message).to include('Classic Tomato Pasta Recipe')
+          expect(result.message).to include('Classic Spaghetti with Tomato and Basil Sauce Recipe')
         end
       end
 

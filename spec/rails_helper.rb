@@ -74,5 +74,6 @@ RSpec.configure do |config|
     config.cassette_library_dir = "#{::Rails.root}/spec/fixtures/vcr_cassettes"
     config.hook_into :webmock
     config.allow_http_connections_when_no_cassette = false
+    config.filter_sensitive_data('<GROQ_API_KEY>') { ENV['GROQ_API_KEY'] }
   end
 end

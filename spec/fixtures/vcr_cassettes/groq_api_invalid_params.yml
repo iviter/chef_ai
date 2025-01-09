@@ -10,7 +10,7 @@ http_interactions:
         a dish based on the provided ingredients"}],"model":"llama-3.3-70b-versatile"}'
     headers:
       Authorization:
-      - Bearer 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
+      - Bearer <GROQ_API_KEY>
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -25,7 +25,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 09 Jan 2025 19:25:25 GMT
+      - Thu, 09 Jan 2025 20:47:18 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -33,7 +33,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8ff6d01c19205e1c-MAD
+      - 8ff7480ecc9d11b0-MRS
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -51,95 +51,83 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '6000'
       X-Ratelimit-Remaining-Requests:
-      - '996'
+      - '971'
       X-Ratelimit-Remaining-Tokens:
-      - '5958'
+      - '4634'
       X-Ratelimit-Reset-Requests:
-      - 5m3.888999999s
+      - 41m45.082s
       X-Ratelimit-Reset-Tokens:
-      - 420ms
+      - 13.651999999s
       X-Request-Id:
-      - req_01jh68ekfxe92r4k61z5r9rpjx
+      - req_01jh6d4he0f4rv6wafj8m8vvzc
       Set-Cookie:
-      - __cf_bm=0ZRY4tCwLroWjmYfXGLtCpwgrNaK9XP302qWtwzbzmE-1736450725-1.0.1.1-lruVYOrgSzaCbWAZIaT_fwUbAJTLkmqAWqEEkGBRlwjKb0Uo8Mwuwxl2G.6SKdf_NblJ4tSWHxoCAKZ80wH.jg;
-        path=/; expires=Thu, 09-Jan-25 19:55:25 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=sBfj01P2awKcPJ_p3pSIBt4hyncaWgQyyjr5EEl6zh4-1736455638-1.0.1.1-8VgHTco2ZUpuFvAB5mULvz98EA7WzyBhdbf8buA4hq4ahkx25uN1F70V0TXpR2yAMMvb0Fj_QckWBT_xZPtvEQ;
+        path=/; expires=Thu, 09-Jan-25 21:17:18 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"chatcmpl-17ea62b3-e9e9-4490-b127-9dc5afde329b","object":"chat.completion","created":1736450723,"model":"llama-3.3-70b-versatile","choices":[{"index":0,"message":{"role":"assistant","content":"I
-        see that the provided information seems to be jumbled and doesn''t make sense
-        in terms of a specific dish type, cuisine, or main ingredients. However, I
-        can still try to come up with a step-by-step recipe based on my understanding
-        of a generic dish.\n\nAssuming the dish type is \"adnrgw\" which could be
-        a mix of different letters and doesn''t directly relate to a specific dish,
-        let''s create a simple recipe. If the cuisine is \"adsad\" which seems like
-        a non-specific term, I''ll assume it''s a fusion cuisine with elements from
-        various cultures. Lastly, the main ingredients \"erwfded\" don''t directly
-        match any common ingredients, so I''ll select some generic items that are
-        versatile and can be used in many dishes.\n\nGiven the unclear information,
-        let''s create a simple and versatile recipe using common ingredients:\n\n###
-        Generic Fusion Dish Recipe\n\n#### Ingredients:\n1. 1 cup of mixed vegetables
-        (bell peppers, carrots, onions)\n2. 1 cup of cooked chicken or tofu (for protein)\n3.
-        2 tablespoons of olive oil\n4. 1 teaspoon of soy sauce\n5. 1 teaspoon of curry
-        powder\n6. Salt and pepper to taste\n7. 1 tablespoon of fresh cilantro (for
-        garnish)\n\n#### Instructions:\n1. **Prepare the ingredients:** Chop the mixed
-        vegetables into bite-sized pieces. If using chicken, ensure it''s cooked and
-        diced. If using tofu, cut it into small cubes.\n2. **Heat the oil:** In a
-        large pan, heat the olive oil over medium heat.\n3. **Add the vegetables:**
-        Put the chopped vegetables into the pan and stir-fry until they''re slightly
-        tender. This should take about 5 minutes.\n4. **Add the protein and spices:**
-        Add the cooked chicken or tofu to the pan, along with the soy sauce and curry
-        powder. Stir well to combine.\n5. **Season to taste:** Add salt and pepper
-        to taste. Continue to stir-fry for another 2-3 minutes, ensuring the flavors
-        are well combined.\n6. **Garnish and serve:** Transfer the dish to a serving
-        plate, garnish with fresh cilantro, and serve hot.\n\nThis recipe is a basic,
-        adaptable dish that can be altered based on the actual ingredients and preferences
-        you have. Feel free to substitute the vegetables, protein, and spices with
-        your favorites or what you have available. Enjoy!"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.018681838,"prompt_tokens":71,"prompt_time":0.012108689,"completion_tokens":495,"completion_time":1.8,"total_tokens":566,"total_time":1.812108689},"system_fingerprint":"fp_fcc3b74982","x_groq":{"id":"req_01jh68ekfxe92r4k61z5r9rpjx"}}
+      string: '{"id":"chatcmpl-2a876d83-d64c-43dd-b4db-45f9d713d5f3","object":"chat.completion","created":1736455636,"model":"llama-3.3-70b-versatile","choices":[{"index":0,"message":{"role":"assistant","content":"I
+        notice that the provided information seems to contain random characters. To
+        create a recipe, I''ll need more specific and accurate details about the dish
+        type, cuisine, and main ingredients. \n\nHowever, I can offer a general template
+        for a recipe. If you provide the actual details, I can help you with a tailored
+        step-by-step recipe.\n\nFor now, I''ll assume a fictional dish based on the
+        given characters. Let''s call it \"Adnrgw\" from the \"Adsad\" cuisine, featuring
+        \"Erwfded\" as the main ingredient.\n\n**Adnrgw Recipe (Fictional)**\n\nIngredients:\n-
+        1 cup Erwfded (assuming it''s a type of vegetable or meat)\n- 2 tablespoons
+        of Adsad sauce (a hypothetical condiment from the Adsad cuisine)\n- 1 teaspoon
+        of spices (common in Adsad cooking, such as a mix of salt, pepper, and a pinch
+        of sugar)\n- 1 tablespoon of oil (for cooking)\n\nInstructions:\n1. **Prepare
+        the Erwfded**: If Erwfded is a vegetable, wash and chop it into bite-sized
+        pieces. If it''s a type of meat, ensure it''s cleaned and cut into appropriate
+        portions.\n2. **Heat the Oil**: In a large pan, heat the oil over medium heat.\n3.
+        **Add the Erwfded**: Place the prepared Erwfded into the pan and cook until
+        it''s tender or lightly browned, depending on its nature.\n4. **Add the Adsad
+        Sauce and Spices**: Pour the Adsad sauce over the Erwfded and sprinkle the
+        spices. Mix well to ensure everything is coated evenly.\n5. **Simmer**: Reduce
+        the heat to low and let the mixture simmer for about 10 minutes, allowing
+        the flavors to meld together.\n6. **Serve**: Serve the Adnrgw hot, garnished
+        with additional spices or herbs if desired.\n\nPlease provide accurate details
+        about the dish type, cuisine, and main ingredients for a more specific and
+        helpful recipe."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.018661443,"prompt_tokens":71,"prompt_time":0.012619203,"completion_tokens":418,"completion_time":1.52,"total_tokens":489,"total_time":1.5326192029999999},"system_fingerprint":"fp_fcc3b74982","x_groq":{"id":"req_01jh6d4he0f4rv6wafj8m8vvzc"}}
 
         '
-  recorded_at: Thu, 09 Jan 2025 19:25:25 GMT
+  recorded_at: Thu, 09 Jan 2025 20:47:17 GMT
 - request:
     method: post
     uri: https://api.groq.com/openai/v1/chat/completions
     body:
       encoding: UTF-8
       string: '{"messages":[{"role":"user","content":"Please validate the following
-        text and confirm whether it is a valid step-by-step recipe: I see that the
-        provided information seems to be jumbled and doesn''t make sense in terms
-        of a specific dish type, cuisine, or main ingredients. However, I can still
-        try to come up with a step-by-step recipe based on my understanding of a generic
-        dish.\n\nAssuming the dish type is \"adnrgw\" which could be a mix of different
-        letters and doesn''t directly relate to a specific dish, let''s create a simple
-        recipe. If the cuisine is \"adsad\" which seems like a non-specific term,
-        I''ll assume it''s a fusion cuisine with elements from various cultures. Lastly,
-        the main ingredients \"erwfded\" don''t directly match any common ingredients,
-        so I''ll select some generic items that are versatile and can be used in many
-        dishes.\n\nGiven the unclear information, let''s create a simple and versatile
-        recipe using common ingredients:\n\n### Generic Fusion Dish Recipe\n\n####
-        Ingredients:\n1. 1 cup of mixed vegetables (bell peppers, carrots, onions)\n2.
-        1 cup of cooked chicken or tofu (for protein)\n3. 2 tablespoons of olive oil\n4.
-        1 teaspoon of soy sauce\n5. 1 teaspoon of curry powder\n6. Salt and pepper
-        to taste\n7. 1 tablespoon of fresh cilantro (for garnish)\n\n#### Instructions:\n1.
-        **Prepare the ingredients:** Chop the mixed vegetables into bite-sized pieces.
-        If using chicken, ensure it''s cooked and diced. If using tofu, cut it into
-        small cubes.\n2. **Heat the oil:** In a large pan, heat the olive oil over
-        medium heat.\n3. **Add the vegetables:** Put the chopped vegetables into the
-        pan and stir-fry until they''re slightly tender. This should take about 5
-        minutes.\n4. **Add the protein and spices:** Add the cooked chicken or tofu
-        to the pan, along with the soy sauce and curry powder. Stir well to combine.\n5.
-        **Season to taste:** Add salt and pepper to taste. Continue to stir-fry for
-        another 2-3 minutes, ensuring the flavors are well combined.\n6. **Garnish
-        and serve:** Transfer the dish to a serving plate, garnish with fresh cilantro,
-        and serve hot.\n\nThis recipe is a basic, adaptable dish that can be altered
-        based on the actual ingredients and preferences you have. Feel free to substitute
-        the vegetables, protein, and spices with your favorites or what you have available.
-        Enjoy!. Respond with true if it is a valid recipe, or false otherwise"}],"model":"llama-3.3-70b-versatile"}'
+        text and confirm whether it is a valid step-by-step recipe: I notice that
+        the provided information seems to contain random characters. To create a recipe,
+        I''ll need more specific and accurate details about the dish type, cuisine,
+        and main ingredients. \n\nHowever, I can offer a general template for a recipe.
+        If you provide the actual details, I can help you with a tailored step-by-step
+        recipe.\n\nFor now, I''ll assume a fictional dish based on the given characters.
+        Let''s call it \"Adnrgw\" from the \"Adsad\" cuisine, featuring \"Erwfded\"
+        as the main ingredient.\n\n**Adnrgw Recipe (Fictional)**\n\nIngredients:\n-
+        1 cup Erwfded (assuming it''s a type of vegetable or meat)\n- 2 tablespoons
+        of Adsad sauce (a hypothetical condiment from the Adsad cuisine)\n- 1 teaspoon
+        of spices (common in Adsad cooking, such as a mix of salt, pepper, and a pinch
+        of sugar)\n- 1 tablespoon of oil (for cooking)\n\nInstructions:\n1. **Prepare
+        the Erwfded**: If Erwfded is a vegetable, wash and chop it into bite-sized
+        pieces. If it''s a type of meat, ensure it''s cleaned and cut into appropriate
+        portions.\n2. **Heat the Oil**: In a large pan, heat the oil over medium heat.\n3.
+        **Add the Erwfded**: Place the prepared Erwfded into the pan and cook until
+        it''s tender or lightly browned, depending on its nature.\n4. **Add the Adsad
+        Sauce and Spices**: Pour the Adsad sauce over the Erwfded and sprinkle the
+        spices. Mix well to ensure everything is coated evenly.\n5. **Simmer**: Reduce
+        the heat to low and let the mixture simmer for about 10 minutes, allowing
+        the flavors to meld together.\n6. **Serve**: Serve the Adnrgw hot, garnished
+        with additional spices or herbs if desired.\n\nPlease provide accurate details
+        about the dish type, cuisine, and main ingredients for a more specific and
+        helpful recipe.. Respond with true if it is a valid recipe, or false otherwise"}],"model":"llama-3.3-70b-versatile"}'
     headers:
       Authorization:
-      - Bearer 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
+      - Bearer <GROQ_API_KEY>
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -154,7 +142,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 09 Jan 2025 19:25:26 GMT
+      - Thu, 09 Jan 2025 20:47:18 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -162,7 +150,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8ff6d029e83a60d1-MAD
+      - 8ff7481a3c57184e-MRS
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -180,32 +168,25 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '6000'
       X-Ratelimit-Remaining-Requests:
-      - '995'
+      - '970'
       X-Ratelimit-Remaining-Tokens:
-      - '4891'
+      - '3900'
       X-Ratelimit-Reset-Requests:
-      - 7m9.746999999s
+      - 43m10.179999999s
       X-Ratelimit-Reset-Tokens:
-      - 11.083999999s
+      - 20.997s
       X-Request-Id:
-      - req_01jh68enp2e9zv98k6w3a8488t
+      - req_01jh6d4k6we978g4w8hdz1n8t5
       Set-Cookie:
-      - __cf_bm=bKSNA2uw1n5LzimSUKY1HVqIyiqY_XmCIfq4zq2Juok-1736450726-1.0.1.1-Wgxf4n3xYFAJjxtcJN3f_ijJ8.aBjwocGG4Q38OE2AbTS2kQbzmPeu4.5GsnA815WJfWYO4DQsXLXc3H8YDI1Q;
-        path=/; expires=Thu, 09-Jan-25 19:55:26 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=VPePk3Ii1aTLyXRXnW1rZqTvA706teDi_ocpCpUXyAM-1736455638-1.0.1.1-JkfV3ZU3eOPRpiQFBxE7iyhFDL9DnUXO6R2deU4FCsgkZjJiTwVlXn1oZm.jKypFx6fOX1zr9.sJ.Glw1hneSw;
+        path=/; expires=Thu, 09-Jan-25 21:17:18 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"chatcmpl-568a90de-bf8d-435c-9bb7-e0dcf929cb5a","object":"chat.completion","created":1736450725,"model":"llama-3.3-70b-versatile","choices":[{"index":0,"message":{"role":"assistant","content":"True.
-        \n\nThe provided recipe, despite being created based on unclear and jumbled
-        information, is a valid step-by-step recipe. It includes a list of ingredients
-        and a series of instructions that can be followed to prepare a dish. The instructions
-        are clear and logical, starting with preparing the ingredients, then cooking
-        the vegetables and protein, and finally seasoning and serving the dish. The
-        recipe also allows for adaptability and substitution of ingredients, making
-        it versatile and usable."},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.01848784099999999,"prompt_tokens":559,"prompt_time":0.073418833,"completion_tokens":93,"completion_time":0.338181818,"total_tokens":652,"total_time":0.411600651},"system_fingerprint":"fp_4e32347616","x_groq":{"id":"req_01jh68enp2e9zv98k6w3a8488t"}}
+      string: '{"id":"chatcmpl-4f6e5b12-0ab1-4c1b-928b-cebcccf1036d","object":"chat.completion","created":1736455638,"model":"llama-3.3-70b-versatile","choices":[{"index":0,"message":{"role":"assistant","content":"false"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.018745157,"prompt_tokens":482,"prompt_time":0.060112835,"completion_tokens":2,"completion_time":0.007272727,"total_tokens":484,"total_time":0.067385562},"system_fingerprint":"fp_4e32347616","x_groq":{"id":"req_01jh6d4k6we978g4w8hdz1n8t5"}}
 
         '
-  recorded_at: Thu, 09 Jan 2025 19:25:26 GMT
+  recorded_at: Thu, 09 Jan 2025 20:47:18 GMT
 recorded_with: VCR 6.3.1
