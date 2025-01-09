@@ -1,11 +1,5 @@
 class Api::V1::RecipesController < ApplicationController
-  def index
-    @recipes = Recipe.all
-
-    render json: @recipes
-  end
-
-  def create
+  def search
     recipe = ::RecipeGeneratorService.new(recipe_params.to_h).call
 
     if ::RecipeValidator.new(recipe.message).valid_recipe?
@@ -19,8 +13,7 @@ class Api::V1::RecipesController < ApplicationController
   private
 
   def recipe_params
-    params.require(:recipe).permit(:description, :name, :dishType, :cuisine, :mainIngredients, :dietaryRestrictions,
-                                   :allergies, :servings, :cookingTime, :cookingMethod, :flavorProfile,
-                                   :specialOccasion)
+    params.require(:recipe).permit(:dishType, :cuisine, :mainIngredients, :dietaryRestrictions, :specialOccasion,
+                                   :allergies, :servings, :cookingTime, :cookingMethod, :flavorProfile)
   end
 end
