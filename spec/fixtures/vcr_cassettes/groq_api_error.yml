@@ -8,7 +8,7 @@ http_interactions:
       string: '{"messages":[{"role":"user","content":"Generate a recipe for pasta"}],"model":"llama-3.3-70b-versatile"}'
     headers:
       Authorization:
-      - Bearer invalid_key
+      - Bearer <GROQ_API_KEY>
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -23,7 +23,7 @@ http_interactions:
       message: Unauthorized
     headers:
       Date:
-      - Thu, 09 Jan 2025 18:14:39 GMT
+      - Thu, 09 Jan 2025 20:42:51 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -31,7 +31,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8ff6688058d55e1d-MAD
+      - 8ff741964c8f11ae-MRS
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -45,10 +45,10 @@ http_interactions:
       X-Groq-Region:
       - us-west-1
       X-Request-Id:
-      - req_01jh64d366edmt70qxachq7ezy
+      - req_01jh6cwekmf2srvzsmgyz6wmga
       Set-Cookie:
-      - __cf_bm=O59KL.19qQjHzc57srPKqITdjDsiCvhIkBhI4_9q2jQ-1736446479-1.0.1.1-FpXXdu9S0QixJa5O1ECc7sRJNAN7_5Vr9Os9rWYskJif4StZajdmiI5Fzs5uzQP_NLDnrmeZTxE5Z6UTPQuhzQ;
-        path=/; expires=Thu, 09-Jan-25 18:44:39 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=9vxYWr_1BFnQNRgp5PlPNgUSaXXwOjALMH9CP7BBEQo-1736455371-1.0.1.1-CeqK.bhDJa4rPHVGaVoXPRWlF88h4L5EOU137Gg1zkcUMXgHQ0oYZIHSM6C65AnlgAwmDZtZLBsqa9x4y3mlVQ;
+        path=/; expires=Thu, 09-Jan-25 21:12:51 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
@@ -57,5 +57,5 @@ http_interactions:
       string: '{"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
 
         '
-  recorded_at: Thu, 09 Jan 2025 18:14:39 GMT
+  recorded_at: Thu, 09 Jan 2025 20:42:51 GMT
 recorded_with: VCR 6.3.1

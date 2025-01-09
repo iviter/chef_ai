@@ -12,7 +12,7 @@ http_interactions:
         a dish based on the provided ingredients"}],"model":"llama-3.3-70b-versatile"}'
     headers:
       Authorization:
-      - Bearer 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
+      - Bearer <GROQ_API_KEY>
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -27,7 +27,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 09 Jan 2025 19:26:43 GMT
+      - Thu, 09 Jan 2025 20:52:31 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -35,7 +35,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8ff6d204897e60c4-MAD
+      - 8ff74fac1a4811bd-MRS
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -53,92 +53,67 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '6000'
       X-Ratelimit-Remaining-Requests:
-      - '994'
+      - '958'
       X-Ratelimit-Remaining-Tokens:
       - '5917'
       X-Ratelimit-Reset-Requests:
-      - 7m22.473999999s
+      - 1h0m19.051s
       X-Ratelimit-Reset-Tokens:
       - 830ms
       X-Request-Id:
-      - req_01jh68gzv2fmzs9bnggbpr608h
+      - req_01jh6de20pf1bv8abmh6erk1em
       Set-Cookie:
-      - __cf_bm=kMRyR_yMFBtPI9CgtPqTLvOLy696PjLad35W8kV1Uow-1736450803-1.0.1.1-eV7.G6S7T_ALMDWMBzNQE3UsizSXhF9uLkTWty_AV.Bic8F83hb.bnuinPysGw5tD4C31QpWdHwZWUct_kSswg;
-        path=/; expires=Thu, 09-Jan-25 19:56:43 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=MTqCQSUYMDl0tpGgOeKk_mi6TL2wf8iNB5LPN4gcQdw-1736455951-1.0.1.1-Nq5m4bamXYw_nh_CrfykgJzPhexyhOifDJg3fjoehFd03QKGhv9MSQdUTUjfryNZdGkDuAQCRjCYP4fd7Vorug;
+        path=/; expires=Thu, 09-Jan-25 21:22:31 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"chatcmpl-cfc910f1-2cb4-4889-add4-c37b3ab0d0dd","object":"chat.completion","created":1736450801,"model":"llama-3.3-70b-versatile","choices":[{"index":0,"message":{"role":"assistant","content":"**Classic
-        Italian Tomato and Basil Pasta Recipe**\n\n Servings: 4\n Cooking Time: 30
-        minutes\n Flavor Profile: Savory\n\n**Ingredients:**\n- 8 oz (225g) Pasta
-        of your choice (e.g., Spaghetti, Fettuccine, or Penne)\n- 2 large Tomatoes,
-        diced\n- 1/2 cup (120g) grated Cheese (e.g., Mozzarella, Parmesan, or a mix)\n-
-        1/4 cup (15g) fresh Basil leaves, chopped\n- 2 tbsp Olive oil\n- Salt, to
-        taste\n- Pepper, to taste\n\n**Step-by-Step Instructions:**\n\n1. **Prepare
-        the Ingredients:**\n   - Rinse the tomatoes and basil leaves. Dice the tomatoes
-        and chop the basil leaves.\n   - Grate the cheese if it''s not pre-grated.\n\n2.
-        **Boil the Pasta:**\n   - Fill a large pot with water and place it on the
-        stove over high heat.\n   - Once the water starts boiling, add a pinch of
-        salt.\n   - Put the pasta into the boiling water.\n   - Cook according to
-        the package instructions until the pasta is al dente (usually around 8-10
-        minutes).\n   - Reserve 1 cup of pasta water before draining the pasta.\n\n3.
-        **Prepare the Tomato and Basil Sauce:**\n   - In a large skillet, heat the
-        olive oil over medium heat.\n   - Add the diced tomatoes to the skillet. Cook
-        for about 5 minutes, stirring occasionally, until the tomatoes start to soften.\n   -
-        Add the chopped basil to the skillet and stir well. Season with salt and pepper
-        to taste.\n   - Continue cooking for another 2-3 minutes, allowing the flavors
-        to combine.\n\n4. **Combine the Pasta and Sauce:**\n   - Add the cooked pasta
-        to the skillet with the tomato and basil sauce.\n   - Toss the pasta in the
-        sauce, ensuring the pasta is well coated. If the sauce seems too thick, add
-        a bit of the reserved pasta water.\n\n5. **Add the Cheese:**\n   - Sprinkle
-        the grated cheese over the pasta and sauce.\n   - Toss the pasta gently to
-        distribute the cheese evenly. The heat from the pasta and sauce will start
-        to melt the cheese.\n\n6. **Serve:**\n   - Divide the pasta among four plates.\n   -
-        Serve immediately, garnished with additional basil leaves if desired.\n\n**Enjoy
-        your delicious homemade Italian Tomato and Basil Pasta!**"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.22327116800000002,"prompt_tokens":109,"prompt_time":0.016269297,"completion_tokens":509,"completion_time":1.8509090910000001,"total_tokens":618,"total_time":1.8671783880000001},"system_fingerprint":"fp_4e32347616","x_groq":{"id":"req_01jh68gzv2fmzs9bnggbpr608h"}}
-
-        '
-  recorded_at: Thu, 09 Jan 2025 19:26:43 GMT
+      string: !binary |-
+        eyJpZCI6ImNoYXRjbXBsLTZmNGE2ZTJjLWQzNGYtNDllOC05Y2VhLTlkNGFhMDAzZGVhMSIsIm9iamVjdCI6ImNoYXQuY29tcGxldGlvbiIsImNyZWF0ZWQiOjE3MzY0NTU5NDgsIm1vZGVsIjoibGxhbWEtMy4zLTcwYi12ZXJzYXRpbGUiLCJjaG9pY2VzIjpbeyJpbmRleCI6MCwibWVzc2FnZSI6eyJyb2xlIjoiYXNzaXN0YW50IiwiY29udGVudCI6IkJhc2VkIG9uIHRoZSBwcm92aWRlZCBpbmdyZWRpZW50cyBhbmQgZGV0YWlscywgSSdkIGJlIGhhcHB5IHRvIHByb3ZpZGUgeW91IHdpdGggYSBzdGVwLWJ5LXN0ZXAgcmVjaXBlIGZvciBhIGNsYXNzaWMgSXRhbGlhbiBkaXNoLiBIZXJlJ3MgYSByZWNpcGUgZm9yIFRvbWF0bywgQ2hlZXNlLCBhbmQgQmFzaWwgUGFzdGE6XG5cbioqVG9tYXRvLCBDaGVlc2UsIGFuZCBCYXNpbCBQYXN0YSBSZWNpcGUqKlxuXG4qKlNlcnZpbmdzOioqIDRcbioqQ29va2luZyBUaW1lOioqIDMwIG1pbnV0ZXNcbioqRGlldGFyeSBSZXN0cmljdGlvbnM6KiogTm9uZVxuXG4qKkluZ3JlZGllbnRzOioqXG4tIDggb3ogKDIyNWcpIHBhc3RhIG9mIHlvdXIgY2hvaWNlIChlLmcuLCBzcGFnaGV0dGksIGxpbmd1aW5lLCBvciBmZXR0dWNjaW5lKVxuLSAyIGN1cHMgKDQwMGcpIGNoZXJyeSB0b21hdG9lcywgaGFsdmVkXG4tIDEgY3VwICgxMTVnKSBncmF0ZWQgbW96emFyZWxsYSBjaGVlc2Vcbi0gMS80IGN1cCAoMTVnKSBjaG9wcGVkIGZyZXNoIGJhc2lsXG4tIDIgY2xvdmVzIGdhcmxpYywgbWluY2VkXG4tIDEvNCBjdXAgKDYwbWwpIG9saXZlIG9pbFxuLSBTYWx0IGFuZCBwZXBwZXIsIHRvIHRhc3RlXG4tIEdyYXRlZCBQYXJtZXNhbiBjaGVlc2UsIGZvciBzZXJ2aW5nIChvcHRpb25hbClcblxuKipTdGVwLWJ5LVN0ZXAgSW5zdHJ1Y3Rpb25zOioqXG5cbjEuICoqQm9pbCB0aGUgUGFzdGE6KiogRmlsbCBhIGxhcmdlIHBvdCB3aXRoIHNhbHRlZCB3YXRlciBhbmQgYnJpbmcgdG8gYSBib2lsLiBDb29rIHRoZSBwYXN0YSBhY2NvcmRpbmcgdG8gcGFja2FnZSBpbnN0cnVjdGlvbnMgdW50aWwgaXQncyBhbCBkZW50ZS4gUmVzZXJ2ZSAxIGN1cCBvZiBwYXN0YSB3YXRlciBiZWZvcmUgZHJhaW5pbmcgdGhlIHNwYWdoZXR0aS5cblxuMi4gKipQcmVwYXJlIHRoZSBTYXVjZToqKiBJbiBhIGxhcmdlIHNraWxsZXQsIGhlYXQgdGhlIG9saXZlIG9pbCBvdmVyIG1lZGl1bSBoZWF0LiBBZGQgdGhlIG1pbmNlZCBnYXJsaWMgYW5kIGNvb2sgZm9yIDEtMiBtaW51dGVzLCB1bnRpbCBmcmFncmFudC5cblxuMy4gKipBZGQgQ2hlcnJ5IFRvbWF0b2VzOioqIEFkZCB0aGUgaGFsdmVkIGNoZXJyeSB0b21hdG9lcyB0byB0aGUgc2tpbGxldCBhbmQgY29vayBmb3IgMy00IG1pbnV0ZXMsIHVudGlsIHRoZXkgc3RhcnQgdG8gcmVsZWFzZSB0aGVpciBqdWljZXMgYW5kIHNvZnRlbi5cblxuNC4gKipBZGQgQmFzaWwgYW5kIFNlYXNvbmluZzoqKiBTdGlyIGluIHRoZSBjaG9wcGVkIGJhc2lsLCBzYWx0LCBhbmQgcGVwcGVyLiBDb29rIGZvciBhbiBhZGRpdGlvbmFsIG1pbnV0ZSwgdW50aWwgdGhlIGJhc2lsIGlzIGZyYWdyYW50LlxuXG41LiAqKkNvbWJpbmUgUGFzdGEgYW5kIFNhdWNlOioqIEFkZCB0aGUgY29va2VkIHBhc3RhIHRvIHRoZSBza2lsbGV0IHdpdGggdGhlIHRvbWF0byBhbmQgYmFzaWwgc2F1Y2UuIFRvc3MgZXZlcnl0aGluZyB0b2dldGhlciwgYWRkaW5nIHNvbWUgcmVzZXJ2ZWQgcGFzdGEgd2F0ZXIgaWYgdGhlIHNhdWNlIHNlZW1zIHRvbyB0aGljay5cblxuNi4gKipBZGQgTW96emFyZWxsYSBDaGVlc2U6KiogUmVtb3ZlIHRoZSBza2lsbGV0IGZyb20gdGhlIGhlYXQgYW5kIHN0aXIgaW4gdGhlIGdyYXRlZCBtb3p6YXJlbGxhIGNoZWVzZS4gVGhlIHJlc2lkdWFsIGhlYXQgd2lsbCBtZWx0IHRoZSBjaGVlc2UsIGNyZWF0aW5nIGEgY3JlYW15IHNhdWNlLlxuXG43LiAqKlNlcnZlOioqIERpdmlkZSB0aGUgcGFzdGEgYW1vbmcgZm91ciBwbGF0ZXMgYW5kIHRvcCB3aXRoIGFkZGl0aW9uYWwgZ3JhdGVkIFBhcm1lc2FuIGNoZWVzZSwgaWYgZGVzaXJlZC5cblxuKipUaXBzIGFuZCBWYXJpYXRpb25zOioqXG4tIFVzZSBmcmVzaCwgaGlnaC1xdWFsaXR5IGluZ3JlZGllbnRzIHRvIGdldCB0aGUgYmVzdCBmbGF2b3Igb3V0IG9mIHlvdXIgZGlzaC5cbi0gQ29uc2lkZXIgYWRkaW5nIHNvbWUgZGljZWQgb25pb25zIG9yIGJlbGwgcGVwcGVycyB0byB0aGUgc2tpbGxldCB3aXRoIHRoZSBnYXJsaWMgZm9yIGFkZGVkIGZsYXZvci5cbi0gSWYgeW91IHByZWZlciBhIGNyZWFtaWVyIHNhdWNlLCB5b3UgY2FuIGFkZCAxLTIgdGFibGVzcG9vbnMgb2YgaGVhdnkgY3JlYW0gb3IgZ3JhdGVkIHJpY290dGEgY2hlZXNlIHRvIHRoZSBwYXN0YS5cbi0gRmVlbCBmcmVlIHRvIGN1c3RvbWl6ZSB0aGUgcmVjaXBlIHRvIHlvdXIgdGFzdGUgYnkgYWRkaW5nIG90aGVyIGluZ3JlZGllbnRzLCBzdWNoIGFzIGNvb2tlZCBjaGlja2VuIG9yIHNhdXTDqWVkIG11c2hyb29tcy5cblxuRW5qb3kgeW91ciBkZWxpY2lvdXMgVG9tYXRvLCBDaGVlc2UsIGFuZCBCYXNpbCBQYXN0YSEifSwibG9ncHJvYnMiOm51bGwsImZpbmlzaF9yZWFzb24iOiJzdG9wIn1dLCJ1c2FnZSI6eyJxdWV1ZV90aW1lIjowLjAxNjc5Nzc1NiwicHJvbXB0X3Rva2VucyI6MTA5LCJwcm9tcHRfdGltZSI6MC4wMjMwNTI5MiwiY29tcGxldGlvbl90b2tlbnMiOjU1OCwiY29tcGxldGlvbl90aW1lIjoyLjczNDQ5NDA3MiwidG90YWxfdG9rZW5zIjo2NjcsInRvdGFsX3RpbWUiOjIuNzU3NTQ2OTkyfSwic3lzdGVtX2ZpbmdlcnByaW50IjoiZnBfYzBjZmE2OTkzNCIsInhfZ3JvcSI6eyJpZCI6InJlcV8wMWpoNmRlMjBwZjFidjhhYm1oNmVyazFlbSJ9fQo=
+  recorded_at: Thu, 09 Jan 2025 20:52:31 GMT
 - request:
     method: post
     uri: https://api.groq.com/openai/v1/chat/completions
     body:
       encoding: UTF-8
       string: '{"messages":[{"role":"user","content":"Please validate the following
-        text and confirm whether it is a valid step-by-step recipe: **Classic Italian
-        Tomato and Basil Pasta Recipe**\n\n Servings: 4\n Cooking Time: 30 minutes\n
-        Flavor Profile: Savory\n\n**Ingredients:**\n- 8 oz (225g) Pasta of your choice
-        (e.g., Spaghetti, Fettuccine, or Penne)\n- 2 large Tomatoes, diced\n- 1/2
-        cup (120g) grated Cheese (e.g., Mozzarella, Parmesan, or a mix)\n- 1/4 cup
-        (15g) fresh Basil leaves, chopped\n- 2 tbsp Olive oil\n- Salt, to taste\n-
-        Pepper, to taste\n\n**Step-by-Step Instructions:**\n\n1. **Prepare the Ingredients:**\n   -
-        Rinse the tomatoes and basil leaves. Dice the tomatoes and chop the basil
-        leaves.\n   - Grate the cheese if it''s not pre-grated.\n\n2. **Boil the Pasta:**\n   -
-        Fill a large pot with water and place it on the stove over high heat.\n   -
-        Once the water starts boiling, add a pinch of salt.\n   - Put the pasta into
-        the boiling water.\n   - Cook according to the package instructions until
-        the pasta is al dente (usually around 8-10 minutes).\n   - Reserve 1 cup of
-        pasta water before draining the pasta.\n\n3. **Prepare the Tomato and Basil
-        Sauce:**\n   - In a large skillet, heat the olive oil over medium heat.\n   -
-        Add the diced tomatoes to the skillet. Cook for about 5 minutes, stirring
-        occasionally, until the tomatoes start to soften.\n   - Add the chopped basil
-        to the skillet and stir well. Season with salt and pepper to taste.\n   -
-        Continue cooking for another 2-3 minutes, allowing the flavors to combine.\n\n4.
-        **Combine the Pasta and Sauce:**\n   - Add the cooked pasta to the skillet
-        with the tomato and basil sauce.\n   - Toss the pasta in the sauce, ensuring
-        the pasta is well coated. If the sauce seems too thick, add a bit of the reserved
-        pasta water.\n\n5. **Add the Cheese:**\n   - Sprinkle the grated cheese over
-        the pasta and sauce.\n   - Toss the pasta gently to distribute the cheese
-        evenly. The heat from the pasta and sauce will start to melt the cheese.\n\n6.
-        **Serve:**\n   - Divide the pasta among four plates.\n   - Serve immediately,
-        garnished with additional basil leaves if desired.\n\n**Enjoy your delicious
-        homemade Italian Tomato and Basil Pasta!**. Respond with true if it is a valid
-        recipe, or false otherwise"}],"model":"llama-3.3-70b-versatile"}'
+        text and confirm whether it is a valid step-by-step recipe: Based on the provided
+        ingredients and details, I''d be happy to provide you with a step-by-step
+        recipe for a classic Italian dish. Here''s a recipe for Tomato, Cheese, and
+        Basil Pasta:\n\n**Tomato, Cheese, and Basil Pasta Recipe**\n\n**Servings:**
+        4\n**Cooking Time:** 30 minutes\n**Dietary Restrictions:** None\n\n**Ingredients:**\n-
+        8 oz (225g) pasta of your choice (e.g., spaghetti, linguine, or fettuccine)\n-
+        2 cups (400g) cherry tomatoes, halved\n- 1 cup (115g) grated mozzarella cheese\n-
+        1/4 cup (15g) chopped fresh basil\n- 2 cloves garlic, minced\n- 1/4 cup (60ml)
+        olive oil\n- Salt and pepper, to taste\n- Grated Parmesan cheese, for serving
+        (optional)\n\n**Step-by-Step Instructions:**\n\n1. **Boil the Pasta:** Fill
+        a large pot with salted water and bring to a boil. Cook the pasta according
+        to package instructions until it''s al dente. Reserve 1 cup of pasta water
+        before draining the spaghetti.\n\n2. **Prepare the Sauce:** In a large skillet,
+        heat the olive oil over medium heat. Add the minced garlic and cook for 1-2
+        minutes, until fragrant.\n\n3. **Add Cherry Tomatoes:** Add the halved cherry
+        tomatoes to the skillet and cook for 3-4 minutes, until they start to release
+        their juices and soften.\n\n4. **Add Basil and Seasoning:** Stir in the chopped
+        basil, salt, and pepper. Cook for an additional minute, until the basil is
+        fragrant.\n\n5. **Combine Pasta and Sauce:** Add the cooked pasta to the skillet
+        with the tomato and basil sauce. Toss everything together, adding some reserved
+        pasta water if the sauce seems too thick.\n\n6. **Add Mozzarella Cheese:**
+        Remove the skillet from the heat and stir in the grated mozzarella cheese.
+        The residual heat will melt the cheese, creating a creamy sauce.\n\n7. **Serve:**
+        Divide the pasta among four plates and top with additional grated Parmesan
+        cheese, if desired.\n\n**Tips and Variations:**\n- Use fresh, high-quality
+        ingredients to get the best flavor out of your dish.\n- Consider adding some
+        diced onions or bell peppers to the skillet with the garlic for added flavor.\n-
+        If you prefer a creamier sauce, you can add 1-2 tablespoons of heavy cream
+        or grated ricotta cheese to the pasta.\n- Feel free to customize the recipe
+        to your taste by adding other ingredients, such as cooked chicken or sautéed
+        mushrooms.\n\nEnjoy your delicious Tomato, Cheese, and Basil Pasta!. Respond
+        with true if it is a valid recipe, or false otherwise"}],"model":"llama-3.3-70b-versatile"}'
     headers:
       Authorization:
-      - Bearer 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
+      - Bearer <GROQ_API_KEY>
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -153,7 +128,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 09 Jan 2025 19:26:44 GMT
+      - Thu, 09 Jan 2025 20:52:32 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -161,7 +136,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8ff6d2142f7869e8-MAD
+      - 8ff74fbf5ecce1f5-MRS
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -179,25 +154,25 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '6000'
       X-Ratelimit-Remaining-Requests:
-      - '993'
+      - '957'
       X-Ratelimit-Remaining-Tokens:
-      - '4870'
+      - '4744'
       X-Ratelimit-Reset-Requests:
-      - 10m2.323999999s
+      - 1h1m52.132s
       X-Ratelimit-Reset-Tokens:
-      - 11.291999999s
+      - 12.551999999s
       X-Request-Id:
-      - req_01jh68h28bey9986w9fxwjq2zh
+      - req_01jh6de508e87sr2nfft1e2y7j
       Set-Cookie:
-      - __cf_bm=YLDpJ2fUUEEjDf5xgNeW5FNHRxFVVn2zg0EgxHjJTjI-1736450804-1.0.1.1-dYb3wepj0BK99fVOk_dnBXX4VNlNTrxVWJ8liSeT5dpDlK6ci5rEVBbPIMy2auK8aabK5VgzmnzSe09PlJi3Jg;
-        path=/; expires=Thu, 09-Jan-25 19:56:44 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=o9RlrFfMbk_alJ1clPuMudU.2KORxCHNiMs9sTkbDC8-1736455952-1.0.1.1-qnmm2wS0qy77ilpGUGbiQhzJ4t2nI2311mYHk.omAcWLE5HhML2QwbiDcc8ylz8VYaiZN8R9rgOB5IeBESfoTQ;
+        path=/; expires=Thu, 09-Jan-25 21:22:32 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"chatcmpl-d0171b7c-ae03-4a66-9627-954af443afc6","object":"chat.completion","created":1736450804,"model":"llama-3.3-70b-versatile","choices":[{"index":0,"message":{"role":"assistant","content":"True"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.040686393,"prompt_tokens":574,"prompt_time":0.068964016,"completion_tokens":2,"completion_time":0.007272727,"total_tokens":576,"total_time":0.076236743},"system_fingerprint":"fp_fcc3b74982","x_groq":{"id":"req_01jh68h28bey9986w9fxwjq2zh"}}
+      string: '{"id":"chatcmpl-6d727d63-7696-4759-88ef-2010c3b02a1a","object":"chat.completion","created":1736455952,"model":"llama-3.3-70b-versatile","choices":[{"index":0,"message":{"role":"assistant","content":"True"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.680495343,"prompt_tokens":622,"prompt_time":0.087339801,"completion_tokens":2,"completion_time":0.007272727,"total_tokens":624,"total_time":0.094612528},"system_fingerprint":"fp_4e32347616","x_groq":{"id":"req_01jh6de508e87sr2nfft1e2y7j"}}
 
         '
-  recorded_at: Thu, 09 Jan 2025 19:26:44 GMT
+  recorded_at: Thu, 09 Jan 2025 20:52:32 GMT
 recorded_with: VCR 6.3.1

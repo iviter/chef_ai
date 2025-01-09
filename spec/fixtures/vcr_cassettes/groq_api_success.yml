@@ -8,7 +8,7 @@ http_interactions:
       string: '{"messages":[{"role":"user","content":"Generate a recipe for pasta"}],"model":"llama-3.3-70b-versatile"}'
     headers:
       Authorization:
-      - Bearer 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
+      - Bearer <GROQ_API_KEY>
       Content-Type:
       - application/json
       Accept-Encoding:
@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 09 Jan 2025 17:45:19 GMT
+      - Thu, 09 Jan 2025 20:50:05 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -31,7 +31,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 8ff63d76d86874dc-MAD
+      - 8ff74b7e1d8a73b3-MRS
       Cf-Cache-Status:
       - DYNAMIC
       Cache-Control:
@@ -49,24 +49,52 @@ http_interactions:
       X-Ratelimit-Limit-Tokens:
       - '6000'
       X-Ratelimit-Remaining-Requests:
-      - '999'
+      - '960'
       X-Ratelimit-Remaining-Tokens:
       - '5989'
       X-Ratelimit-Reset-Requests:
-      - 1m26.4s
+      - 57m14.425999999s
       X-Ratelimit-Reset-Tokens:
       - 110ms
       X-Request-Id:
-      - req_01jh62q9ntevrrzxh4ab7jre0k
+      - req_01jh6d8ttpf59rky1ff2kmdn9y
       Set-Cookie:
-      - __cf_bm=TMdGQZ81tnVwSz9V5N3824CniImKuo8Y2ZkvisdecFA-1736444719-1.0.1.1-4PF6q0HE5EG24d.3hVVt.yeZ5zN9mCmkaQW0nOd1R.lJaViGLs..h7MMDixWuaJ.6QM8Ke_nWIMwKIxyOPZ1Vw;
-        path=/; expires=Thu, 09-Jan-25 18:15:19 GMT; domain=.groq.com; HttpOnly; Secure;
+      - __cf_bm=VIeAEUIkzY.IAEIyDpl9pyIKE10vaMltOp7rcIgi9j0-1736455805-1.0.1.1-Gom5i5m.hvH24C9VHgxHiBnnvWHXhYfFmwj_S3xpoHaNZk30V_4KovPwJ.sfMYxBGIHu7aCPG1Zc85bu0BOvlA;
+        path=/; expires=Thu, 09-Jan-25 21:20:05 GMT; domain=.groq.com; HttpOnly; Secure;
         SameSite=None
       Server:
       - cloudflare
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        eyJpZCI6ImNoYXRjbXBsLTcxNjgwMDM4LTIzMzctNDZiMy04ODE3LTI3ZGQzNzZmY2ExOCIsIm9iamVjdCI6ImNoYXQuY29tcGxldGlvbiIsImNyZWF0ZWQiOjE3MzY0NDQ3MTcsIm1vZGVsIjoibGxhbWEtMy4zLTcwYi12ZXJzYXRpbGUiLCJjaG9pY2VzIjpbeyJpbmRleCI6MCwibWVzc2FnZSI6eyJyb2xlIjoiYXNzaXN0YW50IiwiY29udGVudCI6IioqQ2xhc3NpYyBUb21hdG8gUGFzdGEgUmVjaXBlKipcblxuIFNlcnZpbmdzOiA0XG5cbioqSW5ncmVkaWVudHM6KipcblxuKiAxMiBveiAoMzQwZykgcGFzdGEgb2YgeW91ciBjaG9pY2UgKGUuZy4sIHNwYWdoZXR0aSwgbGluZ3VpbmUsIG9yIHBlbm5lKVxuKiAyIHRhYmxlc3Bvb25zIG9saXZlIG9pbFxuKiAzIGdhcmxpYyBjbG92ZXMsIG1pbmNlZFxuKiAxIG9uaW9uLCBmaW5lbHkgY2hvcHBlZFxuKiAyIGN1cHMgKDQwMGcpIGZyZXNoIG9yIGNhbm5lZCBjcnVzaGVkIHRvbWF0b2VzXG4qIDEgdGVhc3Bvb24gZHJpZWQgYmFzaWxcbiogMSB0ZWFzcG9vbiBkcmllZCBvcmVnYW5vXG4qIFNhbHQgYW5kIHBlcHBlciwgdG8gdGFzdGVcbiogMS80IGN1cCAoNjBnKSBncmF0ZWQgUGFybWVzYW4gY2hlZXNlXG4qIEZyZXNoIHBhcnNsZXksIGNob3BwZWQgKG9wdGlvbmFsKVxuXG4qKkluc3RydWN0aW9uczoqKlxuXG4xLiAqKkNvb2sgdGhlIHBhc3RhKio6IEJyaW5nIGEgbGFyZ2UgcG90IG9mIHNhbHRlZCB3YXRlciB0byBhIGJvaWwuIENvb2sgdGhlIHBhc3RhIGFjY29yZGluZyB0byB0aGUgcGFja2FnZSBpbnN0cnVjdGlvbnMgdW50aWwgYWwgZGVudGUuIFJlc2VydmUgMSBjdXAgb2YgcGFzdGEgd2F0ZXIgYmVmb3JlIGRyYWluaW5nLlxuMi4gKipTYXV0w6kgdGhlIGdhcmxpYyBhbmQgb25pb24qKjogSW4gYSBsYXJnZSBza2lsbGV0LCBoZWF0IHRoZSBvbGl2ZSBvaWwgb3ZlciBtZWRpdW0gaGVhdC4gQWRkIHRoZSBtaW5jZWQgZ2FybGljIGFuZCBjb29rIGZvciAxLTIgbWludXRlcywgdW50aWwgZnJhZ3JhbnQuIEFkZCB0aGUgY2hvcHBlZCBvbmlvbiBhbmQgY29vayBmb3IgMy00IG1pbnV0ZXMsIHVudGlsIHRyYW5zbHVjZW50LlxuMy4gKipBZGQgdGhlIHRvbWF0b2VzKio6IEFkZCB0aGUgY3J1c2hlZCB0b21hdG9lcywgZHJpZWQgYmFzaWwsIGFuZCBkcmllZCBvcmVnYW5vIHRvIHRoZSBza2lsbGV0LiBTZWFzb24gd2l0aCBzYWx0IGFuZCBwZXBwZXIgdG8gdGFzdGUuIFN0aXIgdG8gY29tYmluZSwgdGhlbiByZWR1Y2UgaGVhdCB0byBsb3cgYW5kIHNpbW1lciBmb3IgMTAtMTUgbWludXRlcywgc3RpcnJpbmcgb2NjYXNpb25hbGx5LlxuNC4gKipDb21iaW5lIHBhc3RhIGFuZCBzYXVjZSoqOiBBZGQgdGhlIGNvb2tlZCBwYXN0YSB0byB0aGUgc2tpbGxldCB3aXRoIHRoZSB0b21hdG8gc2F1Y2UuIFRvc3MgdG8gY29hdCB0aGUgcGFzdGEsIGFkZGluZyBzb21lIHJlc2VydmVkIHBhc3RhIHdhdGVyIGlmIHRoZSBzYXVjZSBzZWVtcyB0b28gdGhpY2suXG41LiAqKkFkZCBQYXJtZXNhbiBjaGVlc2UqKjogU3ByaW5rbGUgdGhlIGdyYXRlZCBQYXJtZXNhbiBjaGVlc2Ugb3ZlciB0aGUgcGFzdGEgYW5kIHRvc3MgdG8gY29tYmluZS5cbjYuICoqU2VydmUgYW5kIGVuam95Kio6IFNlcnZlIHRoZSBwYXN0YSBob3QsIGdhcm5pc2hlZCB3aXRoIGNob3BwZWQgZnJlc2ggcGFyc2xleSBpZiBkZXNpcmVkLlxuXG4qKlZhcmlhdGlvbnM6KipcblxuKiAqKlNwaWN5IHR3aXN0Kio6IEFkZCAxLTIgdGVhc3Bvb25zIG9mIHJlZCBwZXBwZXIgZmxha2VzIHRvIHRoZSB0b21hdG8gc2F1Y2UgZm9yIGEgc3BpY3kga2ljay5cbiogKipQcm90ZWluIGFkZGl0aW9uKio6IEFkZCBjb29rZWQgY2hpY2tlbiwgc2F1c2FnZSwgb3IgYmFjb24gdG8gdGhlIHBhc3RhIGZvciBhZGRlZCBwcm90ZWluLlxuKiAqKlJvYXN0ZWQgdmVnZXRhYmxlcyoqOiBUb3NzIHJvYXN0ZWQgdmVnZXRhYmxlcyAoZS5nLiwgY2hlcnJ5IHRvbWF0b2VzLCB6dWNjaGluaSwgYmVsbCBwZXBwZXJzKSB3aXRoIHRoZSBwYXN0YSBhbmQgc2F1Y2UgZm9yIGFkZGVkIGZsYXZvciBhbmQgbnV0cmllbnRzLlxuXG4qKlRpcHM6KipcblxuKiBVc2UgaGlnaC1xdWFsaXR5IGluZ3JlZGllbnRzLCBzdWNoIGFzIGZyZXNoIHRvbWF0b2VzIGFuZCBnb29kLXF1YWxpdHkgY2hlZXNlLCBmb3IgdGhlIGJlc3QgZmxhdm9yLlxuKiBEb24ndCBvdmVyY29vayB0aGUgcGFzdGEg4oCTIGFsIGRlbnRlIGlzIGtleSB0byBhIGdyZWF0IHBhc3RhIGRpc2guXG4qIFJlc2VydmUgc29tZSBwYXN0YSB3YXRlciB0byBhZGp1c3QgdGhlIHNhdWNlJ3MgY29uc2lzdGVuY3kgdG8geW91ciBsaWtpbmcuXG4qIEV4cGVyaW1lbnQgd2l0aCBkaWZmZXJlbnQgcGFzdGEgc2hhcGVzIGFuZCBzYXVjZXMgdG8gZmluZCB5b3VyIGZhdm9yaXRlIGNvbWJpbmF0aW9uISJ9LCJsb2dwcm9icyI6bnVsbCwiZmluaXNoX3JlYXNvbiI6InN0b3AifV0sInVzYWdlIjp7InF1ZXVlX3RpbWUiOjAuNTI1NzM3MzU1LCJwcm9tcHRfdG9rZW5zIjo0MCwicHJvbXB0X3RpbWUiOjAuMDExMjk5NDA3LCJjb21wbGV0aW9uX3Rva2VucyI6NTIxLCJjb21wbGV0aW9uX3RpbWUiOjIuNTA1NTk1NDE1LCJ0b3RhbF90b2tlbnMiOjU2MSwidG90YWxfdGltZSI6Mi41MTY4OTQ4MjIwMDAwMDAzfSwic3lzdGVtX2ZpbmdlcnByaW50IjoiZnBfYzBjZmE2OTkzNCIsInhfZ3JvcSI6eyJpZCI6InJlcV8wMWpoNjJxOW50ZXZycnp4aDRhYjdqcmUwayJ9fQo=
-  recorded_at: Thu, 09 Jan 2025 17:45:19 GMT
+      string: '{"id":"chatcmpl-45c71e15-cacf-4f71-846d-d7ee5b55b3bf","object":"chat.completion","created":1736455802,"model":"llama-3.3-70b-versatile","choices":[{"index":0,"message":{"role":"assistant","content":"**Classic
+        Spaghetti with Tomato and Basil Sauce Recipe**\n\n Servings: 4-6\n\n**Ingredients:**\n\n*
+        12 oz (340g) spaghetti\n* 2 tablespoons olive oil\n* 4 garlic cloves, minced\n*
+        1 can (28 oz/794g) crushed tomatoes\n* 1 cup (250g) fresh tomatoes, diced\n*
+        1 cup (20g) fresh basil leaves, chopped\n* Salt and pepper, to taste\n* 1
+        teaspoon dried oregano\n* 1/2 teaspoon dried basil\n* Grated Parmesan cheese,
+        for serving (optional)\n\n**Instructions:**\n\n1. **Bring a large pot of salted
+        water to a boil** and cook the spaghetti according to package instructions
+        until al dente. Reserve 1 cup of pasta water before draining the spaghetti.\n2.
+        **Heat the olive oil in a large skillet** over medium heat. Add the minced
+        garlic and cook, stirring occasionally, for 4-5 minutes or until fragrant.\n3.
+        **Add the crushed tomatoes, diced tomatoes, dried oregano, and dried basil**
+        to the skillet. Stir to combine, then reduce heat to low and simmer for 15-20
+        minutes, stirring occasionally, allowing the sauce to thicken.\n4. **Stir
+        in the chopped fresh basil** and season the sauce with salt and pepper to
+        taste.\n5. **Add the cooked spaghetti to the skillet** with the tomato sauce.
+        Toss the spaghetti in the sauce, adding some reserved pasta water if the sauce
+        seems too thick.\n6. **Serve the spaghetti hot**, topped with grated Parmesan
+        cheese if desired.\n\n**Tips and Variations:**\n\n* Use high-quality ingredients,
+        such as San Marzano tomatoes, for the best flavor.\n* Add protein like cooked
+        ground beef, sausage, or chicken to the sauce for added flavor.\n* Mix in
+        other vegetables, such as bell peppers or mushrooms, to add texture and nutrients.\n*
+        Substitute other types of pasta, such as linguine or fettuccine, for a different
+        texture.\n* Experiment with different herbs, such as parsley or oregano, to
+        change the flavor profile.\n\n**Nutrition Information (per serving):**\n\n*
+        Calories: 420\n* Protein: 15g\n* Fat: 22g\n* Saturated Fat: 3.5g\n* Carbohydrates:
+        45g\n* Fiber: 4g\n* Sugar: 10g\n* Sodium: 400mg\n\nEnjoy your delicious homemade
+        pasta dish!"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":25.450980309000002,"prompt_tokens":40,"prompt_time":0.012812157,"completion_tokens":518,"completion_time":2.560068111,"total_tokens":558,"total_time":2.572880268},"system_fingerprint":"fp_c0cfa69934","x_groq":{"id":"req_01jh6d8ttpf59rky1ff2kmdn9y"}}
+
+        '
+  recorded_at: Thu, 09 Jan 2025 20:50:05 GMT
 recorded_with: VCR 6.3.1
