@@ -6,7 +6,7 @@ const DEFAULT_ERROR_MESSAGE = 'Failed to generate valid recipe. Please select ap
 const generateRecipe = async (data, setRecipe, setLoading, setError) => {
   setLoading(true);
   try {
-    const response = await axios.post(`${RECIPE_BASE_URL}/recipes/`, { recipe: data });
+    const response = await axios.post(`${RECIPE_BASE_URL}/recipes/search`, { recipe: data });
     setRecipe(response.data);
     setError(null);
   } catch (error) {
