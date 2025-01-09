@@ -1,0 +1,203 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"messages":[{"role":"user","content":"dishType: Pasta, cuisine: Italian,
+        mainIngredients: Tomato, Cheese, Basil, dietaryRestrictions: None, specialOccasion:
+        None, allergies: None, servings: 4, cookingTime: 30 minutes, cookingMethod:
+        Boil, flavorProfile: Savory, message: Please provide step-by-step recipe for
+        a dish based on the provided ingredients"}],"model":"llama-3.3-70b-versatile"}'
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jan 2025 19:26:43 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8ff6d204897e60c4-MAD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '1000'
+      X-Ratelimit-Limit-Tokens:
+      - '6000'
+      X-Ratelimit-Remaining-Requests:
+      - '994'
+      X-Ratelimit-Remaining-Tokens:
+      - '5917'
+      X-Ratelimit-Reset-Requests:
+      - 7m22.473999999s
+      X-Ratelimit-Reset-Tokens:
+      - 830ms
+      X-Request-Id:
+      - req_01jh68gzv2fmzs9bnggbpr608h
+      Set-Cookie:
+      - __cf_bm=kMRyR_yMFBtPI9CgtPqTLvOLy696PjLad35W8kV1Uow-1736450803-1.0.1.1-eV7.G6S7T_ALMDWMBzNQE3UsizSXhF9uLkTWty_AV.Bic8F83hb.bnuinPysGw5tD4C31QpWdHwZWUct_kSswg;
+        path=/; expires=Thu, 09-Jan-25 19:56:43 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-cfc910f1-2cb4-4889-add4-c37b3ab0d0dd","object":"chat.completion","created":1736450801,"model":"llama-3.3-70b-versatile","choices":[{"index":0,"message":{"role":"assistant","content":"**Classic
+        Italian Tomato and Basil Pasta Recipe**\n\n Servings: 4\n Cooking Time: 30
+        minutes\n Flavor Profile: Savory\n\n**Ingredients:**\n- 8 oz (225g) Pasta
+        of your choice (e.g., Spaghetti, Fettuccine, or Penne)\n- 2 large Tomatoes,
+        diced\n- 1/2 cup (120g) grated Cheese (e.g., Mozzarella, Parmesan, or a mix)\n-
+        1/4 cup (15g) fresh Basil leaves, chopped\n- 2 tbsp Olive oil\n- Salt, to
+        taste\n- Pepper, to taste\n\n**Step-by-Step Instructions:**\n\n1. **Prepare
+        the Ingredients:**\n   - Rinse the tomatoes and basil leaves. Dice the tomatoes
+        and chop the basil leaves.\n   - Grate the cheese if it''s not pre-grated.\n\n2.
+        **Boil the Pasta:**\n   - Fill a large pot with water and place it on the
+        stove over high heat.\n   - Once the water starts boiling, add a pinch of
+        salt.\n   - Put the pasta into the boiling water.\n   - Cook according to
+        the package instructions until the pasta is al dente (usually around 8-10
+        minutes).\n   - Reserve 1 cup of pasta water before draining the pasta.\n\n3.
+        **Prepare the Tomato and Basil Sauce:**\n   - In a large skillet, heat the
+        olive oil over medium heat.\n   - Add the diced tomatoes to the skillet. Cook
+        for about 5 minutes, stirring occasionally, until the tomatoes start to soften.\n   -
+        Add the chopped basil to the skillet and stir well. Season with salt and pepper
+        to taste.\n   - Continue cooking for another 2-3 minutes, allowing the flavors
+        to combine.\n\n4. **Combine the Pasta and Sauce:**\n   - Add the cooked pasta
+        to the skillet with the tomato and basil sauce.\n   - Toss the pasta in the
+        sauce, ensuring the pasta is well coated. If the sauce seems too thick, add
+        a bit of the reserved pasta water.\n\n5. **Add the Cheese:**\n   - Sprinkle
+        the grated cheese over the pasta and sauce.\n   - Toss the pasta gently to
+        distribute the cheese evenly. The heat from the pasta and sauce will start
+        to melt the cheese.\n\n6. **Serve:**\n   - Divide the pasta among four plates.\n   -
+        Serve immediately, garnished with additional basil leaves if desired.\n\n**Enjoy
+        your delicious homemade Italian Tomato and Basil Pasta!**"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.22327116800000002,"prompt_tokens":109,"prompt_time":0.016269297,"completion_tokens":509,"completion_time":1.8509090910000001,"total_tokens":618,"total_time":1.8671783880000001},"system_fingerprint":"fp_4e32347616","x_groq":{"id":"req_01jh68gzv2fmzs9bnggbpr608h"}}
+
+        '
+  recorded_at: Thu, 09 Jan 2025 19:26:43 GMT
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"messages":[{"role":"user","content":"Please validate the following
+        text and confirm whether it is a valid step-by-step recipe: **Classic Italian
+        Tomato and Basil Pasta Recipe**\n\n Servings: 4\n Cooking Time: 30 minutes\n
+        Flavor Profile: Savory\n\n**Ingredients:**\n- 8 oz (225g) Pasta of your choice
+        (e.g., Spaghetti, Fettuccine, or Penne)\n- 2 large Tomatoes, diced\n- 1/2
+        cup (120g) grated Cheese (e.g., Mozzarella, Parmesan, or a mix)\n- 1/4 cup
+        (15g) fresh Basil leaves, chopped\n- 2 tbsp Olive oil\n- Salt, to taste\n-
+        Pepper, to taste\n\n**Step-by-Step Instructions:**\n\n1. **Prepare the Ingredients:**\n   -
+        Rinse the tomatoes and basil leaves. Dice the tomatoes and chop the basil
+        leaves.\n   - Grate the cheese if it''s not pre-grated.\n\n2. **Boil the Pasta:**\n   -
+        Fill a large pot with water and place it on the stove over high heat.\n   -
+        Once the water starts boiling, add a pinch of salt.\n   - Put the pasta into
+        the boiling water.\n   - Cook according to the package instructions until
+        the pasta is al dente (usually around 8-10 minutes).\n   - Reserve 1 cup of
+        pasta water before draining the pasta.\n\n3. **Prepare the Tomato and Basil
+        Sauce:**\n   - In a large skillet, heat the olive oil over medium heat.\n   -
+        Add the diced tomatoes to the skillet. Cook for about 5 minutes, stirring
+        occasionally, until the tomatoes start to soften.\n   - Add the chopped basil
+        to the skillet and stir well. Season with salt and pepper to taste.\n   -
+        Continue cooking for another 2-3 minutes, allowing the flavors to combine.\n\n4.
+        **Combine the Pasta and Sauce:**\n   - Add the cooked pasta to the skillet
+        with the tomato and basil sauce.\n   - Toss the pasta in the sauce, ensuring
+        the pasta is well coated. If the sauce seems too thick, add a bit of the reserved
+        pasta water.\n\n5. **Add the Cheese:**\n   - Sprinkle the grated cheese over
+        the pasta and sauce.\n   - Toss the pasta gently to distribute the cheese
+        evenly. The heat from the pasta and sauce will start to melt the cheese.\n\n6.
+        **Serve:**\n   - Divide the pasta among four plates.\n   - Serve immediately,
+        garnished with additional basil leaves if desired.\n\n**Enjoy your delicious
+        homemade Italian Tomato and Basil Pasta!**. Respond with true if it is a valid
+        recipe, or false otherwise"}],"model":"llama-3.3-70b-versatile"}'
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jan 2025 19:26:44 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8ff6d2142f7869e8-MAD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '1000'
+      X-Ratelimit-Limit-Tokens:
+      - '6000'
+      X-Ratelimit-Remaining-Requests:
+      - '993'
+      X-Ratelimit-Remaining-Tokens:
+      - '4870'
+      X-Ratelimit-Reset-Requests:
+      - 10m2.323999999s
+      X-Ratelimit-Reset-Tokens:
+      - 11.291999999s
+      X-Request-Id:
+      - req_01jh68h28bey9986w9fxwjq2zh
+      Set-Cookie:
+      - __cf_bm=YLDpJ2fUUEEjDf5xgNeW5FNHRxFVVn2zg0EgxHjJTjI-1736450804-1.0.1.1-dYb3wepj0BK99fVOk_dnBXX4VNlNTrxVWJ8liSeT5dpDlK6ci5rEVBbPIMy2auK8aabK5VgzmnzSe09PlJi3Jg;
+        path=/; expires=Thu, 09-Jan-25 19:56:44 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-d0171b7c-ae03-4a66-9627-954af443afc6","object":"chat.completion","created":1736450804,"model":"llama-3.3-70b-versatile","choices":[{"index":0,"message":{"role":"assistant","content":"True"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.040686393,"prompt_tokens":574,"prompt_time":0.068964016,"completion_tokens":2,"completion_time":0.007272727,"total_tokens":576,"total_time":0.076236743},"system_fingerprint":"fp_fcc3b74982","x_groq":{"id":"req_01jh68h28bey9986w9fxwjq2zh"}}
+
+        '
+  recorded_at: Thu, 09 Jan 2025 19:26:44 GMT
+recorded_with: VCR 6.3.1

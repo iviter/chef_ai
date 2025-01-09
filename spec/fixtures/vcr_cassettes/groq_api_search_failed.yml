@@ -1,0 +1,159 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"messages":[{"role":"user","content":"message: Please provide step-by-step
+        recipe for a dish based on the provided ingredients"}],"model":"llama-3.3-70b-versatile"}'
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jan 2025 15:29:20 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8ff576548f0373d3-MRS
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '1000'
+      X-Ratelimit-Limit-Tokens:
+      - '6000'
+      X-Ratelimit-Remaining-Requests:
+      - '999'
+      X-Ratelimit-Remaining-Tokens:
+      - '5973'
+      X-Ratelimit-Reset-Requests:
+      - 1m26.4s
+      X-Ratelimit-Reset-Tokens:
+      - 270ms
+      X-Request-Id:
+      - req_01jh5tyccgfeh9dwr5zhpkjj5s
+      Set-Cookie:
+      - __cf_bm=wbCxuaF1JR7TyaA19DifJI_zY13Ho6Ua7JJD5KSa.RU-1736436560-1.0.1.1-mAMwJG8my.p48TxKlzVEloR8CSteuIEG8KIOj8qv4lUmWgWfHdFbkVhNG4urBDvwY9wpxGNsMkU0Cp8f9v8s7Q;
+        path=/; expires=Thu, 09-Jan-25 15:59:20 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-ff17bce3-0023-4e6d-ac3e-bb5c9c45b870","object":"chat.completion","created":1736436560,"model":"llama-3.3-70b-versatile","choices":[{"index":0,"message":{"role":"assistant","content":"I
+        don''t see the provided ingredients. Could you please provide the ingredients
+        you''d like to use, and I''ll be happy to give you a step-by-step recipe for
+        a delicious dish?\n\nOnce I have the ingredients, I can provide you with a
+        recipe that includes:\n\n* Introduction to the dish\n* List of ingredients\n*
+        Step-by-step cooking instructions\n* Tips and variations\n* Nutritional information
+        (if available)\n\nPlease go ahead and provide the ingredients, and I''ll get
+        started on the recipe!"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.017494473000000003,"prompt_tokens":51,"prompt_time":0.010696176,"completion_tokens":103,"completion_time":0.374545455,"total_tokens":154,"total_time":0.385241631},"system_fingerprint":"fp_4e32347616","x_groq":{"id":"req_01jh5tyccgfeh9dwr5zhpkjj5s"}}
+
+        '
+  recorded_at: Thu, 09 Jan 2025 15:29:20 GMT
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"messages":[{"role":"user","content":"Please validate the following
+        text and confirm whether it is a valid step-by-step recipe: I don''t see the
+        provided ingredients. Could you please provide the ingredients you''d like
+        to use, and I''ll be happy to give you a step-by-step recipe for a delicious
+        dish?\n\nOnce I have the ingredients, I can provide you with a recipe that
+        includes:\n\n* Introduction to the dish\n* List of ingredients\n* Step-by-step
+        cooking instructions\n* Tips and variations\n* Nutritional information (if
+        available)\n\nPlease go ahead and provide the ingredients, and I''ll get started
+        on the recipe!\n    Respond with true if it is a valid recipe, or false otherwise"}],"model":"llama-3.3-70b-versatile"}'
+    headers:
+      Authorization:
+      - Bearer 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
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Jan 2025 15:29:21 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8ff57659aae15fa6-MRS
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Ratelimit-Limit-Requests:
+      - '1000'
+      X-Ratelimit-Limit-Tokens:
+      - '6000'
+      X-Ratelimit-Remaining-Requests:
+      - '998'
+      X-Ratelimit-Remaining-Tokens:
+      - '5718'
+      X-Ratelimit-Reset-Requests:
+      - 2m52.05s
+      X-Ratelimit-Reset-Tokens:
+      - 2.818999999s
+      X-Request-Id:
+      - req_01jh5tyd41exsvx67f063ayrc4
+      Set-Cookie:
+      - __cf_bm=v8vyKajETgsPUyEPOiPJrWjyMK6mTpH.rQSHuGNxzl4-1736436561-1.0.1.1-1wV8rbAcHLdspNI68xpSYg.fgBhjEWBvkxV4dyACsOuhjChsTpRXARGeXAdnwCvoD0j_r8dMENbY84CLMpbhDg;
+        path=/; expires=Thu, 09-Jan-25 15:59:21 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"chatcmpl-8b0a037e-cb1f-4637-a7e5-bb5a2eff9fdd","object":"chat.completion","created":1736436561,"model":"llama-3.3-70b-versatile","choices":[{"index":0,"message":{"role":"assistant","content":"false"},"logprobs":null,"finish_reason":"stop"}],"usage":{"queue_time":0.018406218,"prompt_tokens":168,"prompt_time":0.027009901,"completion_tokens":2,"completion_time":0.007272727,"total_tokens":170,"total_time":0.034282628},"system_fingerprint":"fp_fcc3b74982","x_groq":{"id":"req_01jh5tyd41exsvx67f063ayrc4"}}
+
+        '
+  recorded_at: Thu, 09 Jan 2025 15:29:21 GMT
+recorded_with: VCR 6.3.1

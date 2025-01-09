@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.groq.com/openai/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"messages":[{"role":"user","content":"Generate a recipe for pasta"}],"model":"llama-3.3-70b-versatile"}'
+    headers:
+      Authorization:
+      - Bearer invalid_key
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Thu, 09 Jan 2025 18:14:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '96'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 8ff6688058d55e1d-MAD
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cache-Control:
+      - private, max-age=0, no-store, no-cache, must-revalidate
+      Vary:
+      - Origin, Accept-Encoding
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Groq-Region:
+      - us-west-1
+      X-Request-Id:
+      - req_01jh64d366edmt70qxachq7ezy
+      Set-Cookie:
+      - __cf_bm=O59KL.19qQjHzc57srPKqITdjDsiCvhIkBhI4_9q2jQ-1736446479-1.0.1.1-FpXXdu9S0QixJa5O1ECc7sRJNAN7_5Vr9Os9rWYskJif4StZajdmiI5Fzs5uzQP_NLDnrmeZTxE5Z6UTPQuhzQ;
+        path=/; expires=Thu, 09-Jan-25 18:44:39 GMT; domain=.groq.com; HttpOnly; Secure;
+        SameSite=None
+      Server:
+      - cloudflare
+    body:
+      encoding: UTF-8
+      string: '{"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+
+        '
+  recorded_at: Thu, 09 Jan 2025 18:14:39 GMT
+recorded_with: VCR 6.3.1
