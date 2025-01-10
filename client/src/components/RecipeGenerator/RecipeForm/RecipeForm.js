@@ -47,7 +47,7 @@ const RecipeForm = ({ generateRecipe }) => {
 
   return (
     <div className="bg-gray-50 p-4 rounded-lg shadow-md w-full">
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form data-testid="recipe-form" onSubmit={handleSubmit} className="space-y-4">
         {Object.keys(errors).length > 0 && (
           <div className="text-red-600 mb-4">
             Please fill in all required fields
