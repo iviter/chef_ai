@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const RECIPE_BASE_URL = process.env.REACT_APP_RECIPE_BASE_URL;
+const RECIPE_BASE_URL = process.env.REACT_APP_CHEF_AI_BASE_URL;
 const DEFAULT_ERROR_MESSAGE =
   'Failed to generate valid recipe. Please select appropriate ingredients and try again!';
 
