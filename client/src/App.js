@@ -1,6 +1,7 @@
-import RecipeList from './components/RecipeGenerator/RecipeList';
+import React from "react";
+import RecipeList from './components/RecipeGenerator/RecipeList/RecipeList';
 import { useState } from 'react';
-import RecipeForm from './components/RecipeGenerator/RecipeForm';
+import RecipeForm from './components/RecipeGenerator/RecipeForm/RecipeForm';
 import generateRecipe from './components/api/apiService';
 
 const App = () => {
