@@ -36,7 +36,7 @@ Ensure you have the following installed:
 2. **API Integration**:  
    ```bash
    ChefAI uses Groq API for generating recipes. Ensure you have an API key and configure it in the environment variables:
-   GROQ_API_KEY=your_api_key_here
+   GROQ_API_KEY="your_api_key_here"
 
 3. **Install dependencies**:
    ```bash
