@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import RecipeList from './components/RecipeGenerator/RecipeList/RecipeList';
 import { useState } from 'react';
 import RecipeForm from './components/RecipeGenerator/RecipeForm/RecipeForm';
@@ -15,11 +15,19 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center py-1 px-4">
-      <h1 className="text-3xl font-bold text-blue-600 mb-1">Generate Your Recipe:</h1>
+      <h1 className="text-3xl font-bold text-blue-600 mb-1">
+        Generate Your Recipe:
+      </h1>
       <div className="w-full max-w-2xl bg-white shadow-lg rounded-lg p-6">
         <RecipeForm generateRecipe={handleGenerateRecipe} />
-        {loading && <p className="text-center text-blue-500 font-medium mt-4">Loading...</p>}
-        {error && <p className="text-center text-red-500 font-medium mt-4">{error}</p>}
+        {loading && (
+          <p className="text-center text-blue-500 font-medium mt-4">
+            Loading...
+          </p>
+        )}
+        {error && (
+          <p className="text-center text-red-500 font-medium mt-4">{error}</p>
+        )}
         {!loading && <RecipeList recipeText={recipe} />}
       </div>
     </div>

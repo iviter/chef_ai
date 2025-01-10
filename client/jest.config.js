@@ -1,13 +1,11 @@
 module.exports = {
-  testEnvironment: "jsdom",
-  setupFilesAfterEnv: ["@testing-library/jest-dom"],
+  testEnvironment: 'jsdom',
+  setupFilesAfterEnv: ['@testing-library/jest-dom'],
   transform: {
-    "^.+\\.jsx?$": "babel-jest",
+    '^.+\\.jsx?$': 'babel-jest',
   },
-  transformIgnorePatterns: [
-    "/node_modules/(?!react-markdown|micromark)/"
-  ],
+  transformIgnorePatterns: ['/node_modules/(?!react-markdown|micromark)/'],
   moduleNameMapper: {
-    "\\.(css|scss|sass)$": "identity-obj-proxy",
+    '\\.(css|scss|sass)$': 'identity-obj-proxy',
   },
 };
