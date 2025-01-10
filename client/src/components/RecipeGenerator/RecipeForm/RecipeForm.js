@@ -26,13 +26,13 @@ const RecipeForm = ({ generateRecipe }) => {
     specialOccasion,
   };
 
-
   const isValidRequiredFields = () => {
     const newErrors = {};
 
-    if (!dishType) newErrors.dishType = "Dish type is required";
-    if (!cuisine) newErrors.cuisine = "Cuisine is required";
-    if (!mainIngredients) newErrors.mainIngredients = "Main ingredients are required";
+    if (!dishType) newErrors.dishType = 'Dish type is required';
+    if (!cuisine) newErrors.cuisine = 'Cuisine is required';
+    if (!mainIngredients)
+      newErrors.mainIngredients = 'Main ingredients are required';
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -47,14 +47,23 @@ const RecipeForm = ({ generateRecipe }) => {
 
   return (
     <div className="bg-gray-50 p-4 rounded-lg shadow-md w-full">
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form
+        data-testid="recipe-form"
+        onSubmit={handleSubmit}
+        className="space-y-4"
+      >
         {Object.keys(errors).length > 0 && (
           <div className="text-red-600 mb-4">
             Please fill in all required fields
           </div>
         )}
         <div>
-          <label htmlFor="dishType" className="block text-sm font-medium text-gray-700">*Dish Type:</label>
+          <label
+            htmlFor="dishType"
+            className="block text-sm font-medium text-gray-700"
+          >
+            *Dish Type:
+          </label>
           <select
             id="dishType"
             value={dishType}
@@ -70,7 +79,12 @@ const RecipeForm = ({ generateRecipe }) => {
         </div>
 
         <div>
-          <label htmlFor="cuisine" className="block text-sm font-medium text-gray-700">*Cuisine:</label>
+          <label
+            htmlFor="cuisine"
+            className="block text-sm font-medium text-gray-700"
+          >
+            *Cuisine:
+          </label>
           <select
             id="cuisine"
             value={cuisine}
@@ -87,7 +101,12 @@ const RecipeForm = ({ generateRecipe }) => {
         </div>
 
         <div>
-          <label htmlFor="mainIngredients" className="block text-sm font-medium text-gray-700">*Main Ingredients:</label>
+          <label
+            htmlFor="mainIngredients"
+            className="block text-sm font-medium text-gray-700"
+          >
+            *Main Ingredients:
+          </label>
           <input
             type="text"
             id="mainIngredients"
@@ -98,7 +117,12 @@ const RecipeForm = ({ generateRecipe }) => {
         </div>
 
         <div>
-          <label htmlFor="dietaryRestrictions" className="block text-sm font-medium text-gray-700">Dietary Restrictions:</label>
+          <label
+            htmlFor="dietaryRestrictions"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Dietary Restrictions:
+          </label>
           <input
             type="text"
             id="dietaryRestrictions"
@@ -109,7 +133,12 @@ const RecipeForm = ({ generateRecipe }) => {
         </div>
 
         <div>
-          <label htmlFor="allergies" className="block text-sm font-medium text-gray-700">Allergies:</label>
+          <label
+            htmlFor="allergies"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Allergies:
+          </label>
           <select
             id="allergies"
             value={allergies}
@@ -123,7 +152,12 @@ const RecipeForm = ({ generateRecipe }) => {
         </div>
 
         <div>
-          <label htmlFor="servings" className="block text-sm font-medium text-gray-700">Servings:</label>
+          <label
+            htmlFor="servings"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Servings:
+          </label>
           <select
             id="servings"
             value={servings}
@@ -138,7 +172,12 @@ const RecipeForm = ({ generateRecipe }) => {
         </div>
 
         <div>
-          <label htmlFor="cookingTime" className="block text-sm font-medium text-gray-700">Cooking Time:</label>
+          <label
+            htmlFor="cookingTime"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Cooking Time:
+          </label>
           <select
             id="cookingTime"
             value={cookingTime}
@@ -153,7 +192,12 @@ const RecipeForm = ({ generateRecipe }) => {
         </div>
 
         <div>
-          <label htmlFor="cookingMethod" className="block text-sm font-medium text-gray-700">Cooking Method:</label>
+          <label
+            htmlFor="cookingMethod"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Cooking Method:
+          </label>
           <select
             id="cookingMethod"
             value={cookingMethod}
@@ -168,7 +212,12 @@ const RecipeForm = ({ generateRecipe }) => {
         </div>
 
         <div>
-          <label htmlFor="flavorProfile" className="block text-sm font-medium text-gray-700">Flavor Profile:</label>
+          <label
+            htmlFor="flavorProfile"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Flavor Profile:
+          </label>
           <select
             id="flavorProfile"
             value={flavorProfile}
@@ -183,7 +232,12 @@ const RecipeForm = ({ generateRecipe }) => {
         </div>
 
         <div>
-          <label htmlFor="specialOccasion" className="block text-sm font-medium text-gray-700">Special Occasion:</label>
+          <label
+            htmlFor="specialOccasion"
+            className="block text-sm font-medium text-gray-700"
+          >
+            Special Occasion:
+          </label>
           <select
             id="specialOccasion"
             value={specialOccasion}
