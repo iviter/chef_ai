@@ -15,7 +15,7 @@ class RecipeGeneratorService
 
   def filter(params)
     params
-      .reject { |_, v| v.blank? }
+      .reject { |_k, v| v.blank? }
       .merge(DEFAULT_MESSAGE)
       .map { |k, v| "#{k}: #{v}" }
       .join(', ')
