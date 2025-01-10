@@ -36,7 +36,7 @@ Ensure you have the following installed:
 2. **API Integration**:  
    ```bash
    ChefAI uses Groq API for generating recipes. Ensure you have an API key and configure it in the environment variables:
-   `GROQ_API_KEY=your_api_key_here`
+   GROQ_API_KEY=your_api_key_here
 
 3. **Install dependencies**:
    ```bash
@@ -45,8 +45,8 @@ Ensure you have the following installed:
 
 4. **Start the server**:
    ```bash
-   Back-end: `rails server`
-   Front-end: navigate to client app and run: `npm run start`
+   Back-end: rails s
+   Front-end: navigate to client app and run: npm run start
 
 5. **Run unit specs**:
    ```bash
@@ -57,4 +57,4 @@ Ensure you have the following installed:
    ```bash
    http://localhost:3001/
 
-- **Happy cooking with ChefAI! 🍴**
+**Happy cooking with ChefAI! 🍴**
