@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 7.2.2', '>= 7.2.2.1'
+gem 'rails', '~> 8.0.2'
 gem 'rack-cors', '~> 2.0', '>= 2.0.2'
 gem 'retryable', '~> 3.0', '>= 3.0.5'
 gem 'sqlite3', '>= 1.4'
