@@ -24,7 +24,7 @@ To run the app locally, follow these steps:
 ### Prerequisites
 Ensure you have the following installed:
 - **Ruby**: `3.3.5`
-- **Rails**: `7.2.1.2`
+- **Rails**: `8.0.2`
 - **Node.js** and **Yarn**: For managing front-end dependencies
 
 ### Installation
