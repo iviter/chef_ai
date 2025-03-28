@@ -5,7 +5,7 @@ gem 'rack-cors', '~> 2.0', '>= 2.0.2'
 gem 'retryable', '~> 3.0', '>= 3.0.5'
 gem 'sqlite3', '>= 1.4'
 gem 'puma', '>= 5.0'
-gem 'httparty', '~> 0.22.0'
+gem 'httparty', '~> 0.23.0'
 gem 'tzinfo-data', platforms: %i[ windows jruby ]
 gem 'bootsnap', require: false
 
