@@ -11,7 +11,7 @@ gem 'bootsnap', require: false
 
 
 group :development, :test do
-  gem 'dotenv-rails', '~> 3.1', '>= 3.1.8'
+  gem 'dotenv-rails', '~> 3.2'
   gem 'rspec-rails', '~> 8.0'
   gem 'pry-rails', '~> 0.3.11'
   gem 'brakeman', '~> 7.0', '>= 7.0.2', require: false
